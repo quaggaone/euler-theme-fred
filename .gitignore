@@ -1,0 +1,33 @@
+# MODX & Gitify #
+#################
+/_backup
+/config.core.php
+/connectors
+/core
+/ht.access
+/index.php
+/manager
+/assets/*
+!/assets/themes/euler
+
+# IDE files (optional or add more) #
+###################################
+.idea
+.vscode
+.settings
+nbproject
+.project
+.zed
+
+# OS generated files (optional) #
+#################################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+node_modules
+npm-debug.log
+.sass-cache
