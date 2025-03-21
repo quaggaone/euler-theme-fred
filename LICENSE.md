@@ -1,2 +1,1 @@
-LICENSE
-none
+UNLICENSED
