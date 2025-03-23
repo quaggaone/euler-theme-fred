@@ -1,14 +1,16 @@
 {
   "name": "euler-theme-fred",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "MODX Fred Theme based on the euler web theme",
   "main": "index.js",
   "scripts": {
+    "update:euler-theme": "ncp node_modules/euler-theme/dist/css/ assets/themes/euler/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Felix Dimmerling",
   "license": "UNLICENSED",
   "dependencies": {
-    "euler-theme": "github:quaggaone/euler-theme#v2.0.0-alpha.3"
+    "euler-theme": "github:quaggaone/euler-theme#v2.0.0-alpha.5",
+    "ncp": "^2.0.0"
   }
 }
