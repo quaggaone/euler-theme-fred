@@ -1,3 +1,9 @@
+0.0.4-pl [2025-03-24]
+---
+- added Snippet and System Setting for displaying Blog Types on Cards
+- added Populated Grid with Filters
+- correct display of Autotag TVs
+
 0.0.3-pl [2025-03-23]
 ---
 - changed data-fred-name on accordion headings to make it work at all (existing headings will disappear)
