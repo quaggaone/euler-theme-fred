@@ -1,0 +1,20 @@
+id: 1
+name: Statement
+uuid: 50a47b5b-13f9-4b91-b817-9e794be44827
+description: 'Combination of heading and short paragraph'
+image: 'https://placehold.co/300x150?text=Statement'
+category: 3
+options_override: '{"settings":[{"name":"modifier","label":"Modifier","type":"select","options":{" ":"Default","elr-statement--reverse":"Reverse","elr-statement--center":"Center","elr-statement--halfed":"50\/50","elr-statement--only-heading":"Only Heading","elr-statement--only-text":"Only Text"},"value":" "}]}'
+
+-----
+
+<section class="elr-statement {{ modifier }}">
+    <div class="elr-statement__col elr-statement__col--heading">
+        <h3 data-fred-name="heading" data-fred-rte="true" data-fred-rte-config="heading">Insert heading here...</h3>
+    </div>
+    <div class="elr-statement__col elr-statement__col--text">
+        <div data-fred-name="content" data-fred-rte="true" data-fred-rte-config="paragraph-minimal">
+            Insert text here...
+        </div>
+    </div>
+</section>

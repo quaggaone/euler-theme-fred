@@ -1,0 +1,7 @@
+id: 5
+name: heading
+theme: 2
+
+-----
+
+{"theme":"inlite","inline":true,"plugins":"","insert_toolbar":" ","selection_toolbar":"italic","image_advtab":true,"imagetools_toolbar":"alignleft aligncenter alignright | rotateleft rotateright | flipv fliph | editimage imageoptions","auto_focus":false,"branding":false,"relative_urls":false,"image_dimensions":false,"text_patterns":[{"start":"*","end":"*","format":"italic"}],"valid_elements":"br,em","valid_styles":{"*":""},"valid_classes":{"*":""}}

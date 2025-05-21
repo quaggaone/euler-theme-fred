@@ -1,0 +1,8 @@
+id: 1
+name: colorModifier
+description: 'euler theme colors'
+theme: 2
+
+-----
+
+{"name":"colorModifier","label":"Color","type":"colorswatch","options":[{"value":"","color":"white","label":"Inherit from colored parent"},{"value":"--grey","color":"var(--elr-grey-50)","label":"Grey"},{"value":"--amaranth","color":"var(--elr-amaranth-50)","label":"Amaranth"},{"value":"--gold","color":"var(--elr-gold-50)","label":"Gold"},{"value":"--steel","color":"var(--elr-steel-50)","label":"Steel"},{"value":"--black-violet","color":"var(--elr-black-violet-50)","label":"Black-Violet"},{"value":"--green","color":"var(--elr-green-50)","label":"Green"},{"value":"--orange","color":"var(--elr-orange-50)","label":"Orange"},{"value":"--yellow","color":"var(--elr-yellow-50)","label":"Yellow"}],"value":""}

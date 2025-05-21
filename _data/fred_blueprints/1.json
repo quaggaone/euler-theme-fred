@@ -1,0 +1,11 @@
+id: 1
+name: Grid-1Col-Text
+uuid: aa09f96c-0103-4dbc-a675-9e7c912059eb
+image: 'https://placehold.co/300x150?text=Grid-1Col-Text'
+category: 1
+rank: 1
+public: 1
+
+-----
+
+[{"widget":"583c4f09-9424-44dc-9b6e-9e7952c21050","values":[],"pluginsData":[],"settings":{"colorModifier":"","modifier":" "},"children":{"content":[{"widget":"0150e372-801c-4994-8e69-9e7a30c2c66d","values":{"content":{"_raw":{"_value":"\n            Insert text here...\n        "}}},"pluginsData":[],"settings":[],"children":[]}]}}]

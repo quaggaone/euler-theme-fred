@@ -1,0 +1,8 @@
+id: 1
+name: TinyMCE
+description: "New standard configuration of the TinyMCE options.\nThis limits the options available to the user to minimize layout difficulties. Original here:\nhttps://docs.modx.com/current/en/extras/fred/themer/rte_configs"
+theme: 2
+
+-----
+
+{"theme":"inlite","inline":true,"plugins":"","insert_toolbar":" ","selection_toolbar":" ","image_advtab":true,"imagetools_toolbar":"alignleft aligncenter alignright | rotateleft rotateright | flipv fliph | editimage imageoptions","auto_focus":false,"branding":false,"relative_urls":false,"image_dimensions":false,"text_patterns":false,"invalid_elements":"*","valid_styles":{"*":""},"valid_classes":{"*":""}}

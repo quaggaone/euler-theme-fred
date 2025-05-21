@@ -1,0 +1,15 @@
+id: 3
+name: Grid
+uuid: 583c4f09-9424-44dc-9b6e-9e7952c21050
+description: 'Grid for nesting other blocks'
+image: 'https://placehold.co/300x150?text=Grid'
+category: 1
+options_override: '{"settings":[{"fred-import":"colorModifier"},{"name":"modifier","label":"Layout Modifier","type":"select","options":{" ":"1 Column","elr-grid--row-cols-2":"2 Columns","elr-grid--row-cols-3":"3 Columns","elr-grid--row-cols-4":"4 Columns"},"value":"elr-grid--row-cols-3"}]}'
+
+-----
+
+<section class="elr-grid {{ modifier }} {{ colorModifier }}">
+    <div class="elr-grid__container" data-fred-dropzone="content" data-fred-min-height="250px">
+        
+    </div>
+</section>

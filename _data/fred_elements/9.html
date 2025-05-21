@@ -1,0 +1,25 @@
+id: 9
+name: Call-to-Action
+uuid: 482901ae-db83-4246-855e-9e7a3fa6f52d
+image: 'https://placehold.co/300x150?text=Call-to-Action'
+category: 3
+rank: 2
+options_override: '{"settings":[{"fred-import":"colorModifier"},{"name":"modifier","label":"Modifier","type":"select","options":{" ":"Default"},"value":" "},{"name":"mediaUrl","label":"Media URL","type":"image","value":"[[++fred.theme.euler.theme_dir]]brand\/open-graph.png"},{"name":"mediaAlt","label":"Media Description for Screen Readers <br> (This is what you can factually see on the image)","type":"text","value":""},{"name":"linkPage","label":"Linked Page","type":"page"}]}'
+
+-----
+
+<section class="elr-cta {{ modifier }} {{ colorModifier }}">
+    <div class="elr-cta__container">
+        <div class="elr-cta__col elr-cta__col--content">
+            <div class="elr-cta__text" data-fred-name="content" data-fred-rte="true" data-fred-rte-config="paragraph">
+                Insert text here...
+            </div>
+            <div class="elr-cta__btn-group">
+                <a data-fred-link-type="page" data-fred-link-page="{{ linkPage.id }}" class="btn" data-fred-name="btn-primary" data-fred-rte="false">Contact Us</a>
+            </div>
+        </div>
+        <div class="elr-cta__col elr-cta__col--media">
+            <img src="{{ mediaUrl }}" alt="{{ mediaAlt }}">
+        </div>
+    </div>
+</section>

@@ -1,0 +1,23 @@
+id: 4
+name: 'Feature Box'
+uuid: e526532e-52f8-4b7d-abf2-9e79553574db
+description: 'Container for featuring a nested Element'
+image: 'https://placehold.co/300x150?text=Feature+Box'
+category: 1
+rank: 1
+options_override: '{"settings":[{"fred-import":"colorModifier"},{"name":"modifier","label":"Layout Modifier","type":"select","options":{" ":"Default","elr-feature-box--important":"Important","elr-feature-box--reverse":"Reverse","elr-feature-box--important elr-feature-box--reverse":"Reverse Important"},"value":" "}]}'
+
+-----
+
+<section class="elr-feature-box {{ modifier }} {{ colorModifier }}">
+    <div class="elr-feature-box__container">
+        <div class="elr-feature-box__col elr-feature-box__col--desc">
+            <div data-fred-name="desc" data-fred-rte="true" data-fred-rte-config="paragraph">
+                Insert text here...
+            </div>
+        </div>
+        <div class="elr-feature-box__col elr-feature-box__col--content" data-fred-dropzone="content" data-fred-min-height="250px">
+            
+        </div>
+    </div>
+</section>

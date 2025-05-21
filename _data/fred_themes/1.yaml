@@ -1,0 +1,7 @@
+id: 1
+name: Default
+namespace: fred_theme_default
+settingsPrefix: fred.theme.default
+theme_folder: default
+uuid: 36a151a5-50cf-4006-8802-9e7462beccb6
+description: 'Fred''s Default Theme'

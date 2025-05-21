@@ -1,0 +1,25 @@
+id: 2
+name: 'Display List'
+uuid: 96153cdc-6a2a-42ac-8ce9-9e79506f1ba3
+description: 'Large pairs of images with heading and text'
+image: 'https://placehold.co/300x150?text=Display+List'
+category: 3
+rank: 1
+options_override: '{"settings":[{"name":"modifier","label":"Layout Modifier","type":"select","options":{" ":"Default","elr-display-list--alternating":"Alternating","elr-display-list--reverse":"Reverse","elr-display-list--alternating elr-display-list--reverse":"Reverse Alternating"},"value":" "},{"name":"length","label":"Number of Items","type":"slider","min":1,"max":10,"value":2}]}'
+
+-----
+
+<section class="elr-display-list {{ modifier }}">
+    {% for i in 1..length %}
+        <div class="elr-display-list__item">
+            <div class="elr-display-list__col elr-display-list__col--content">
+                <div data-fred-name="content-{{i}}" data-fred-rte="true" data-fred-rte-config="paragraph">
+                    Insert text here...
+                </div>
+            </div>
+            <div class="elr-display-list__col elr-display-list__col--media">
+                <img src="[[++fred.theme.euler.theme_dir]]brand/open-graph.png" alt="" data-fred-name="image-{{i}}" data-fred-attrs="alt" data-fred-image-media-source="Images">
+            </div>
+        </div>
+    {% endfor %}
+</section>

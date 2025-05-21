@@ -1,0 +1,18 @@
+id: 7
+name: Image
+uuid: ab2543dc-38f9-4b6e-8f23-9e7a32c1ba93
+image: 'https://placehold.co/300x150?text=Image'
+category: 2
+rank: 2
+options_override: '{"settings":[{"name":"modifier","label":"Modifier","type":"select","options":{" ":"Default","elr-figure--start":"Align Start","elr-figure--end":"Align End"},"value":" "},{"name":"mediaUrl","label":"URL","type":"image","mediaSource":"Images","value":"[[++fred.theme.euler.theme_dir]]brand\/open-graph.png"},{"name":"mediaAlt","label":"Description for Screen Readers <br> (This is what you can factually see on the image)","type":"text","value":""},{"name":"caption","label":"Caption <br> (Text accompanying the image)","type":"textarea","value":""}]}'
+
+-----
+
+<div class="elr-figure {{ modifier }}">
+    <figure class="elr-figure__container">
+        <img src="{{ mediaUrl }}" alt="{{ mediaAlt }}">
+        <figcaption class="elr-figure__caption">
+            {{ caption }}
+        </figcaption>
+    </figure>
+</div>
