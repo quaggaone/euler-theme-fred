@@ -1,0 +1,35 @@
+id: 5
+source: 1
+name: elr_head
+description: ''
+category: 'euler Theme'
+properties: 'a:0:{}'
+
+-----
+
+<meta charset="[[++modx_charset]]">
+<link rel="canonical" href="[[*id:is=`[[++site_start]]`:then=`[[++site_url]]`:else=`[[~[[*id]]? &scheme=`full`]]`]]">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="max-snippet:-1">
+<meta name="description" content="[[*description]]">
+<meta name="theme-color" content="[[++fred.theme.euler.theme_color]]">
+
+[[++fred.theme.euler.favicon_tags]]
+
+<!-- Open Graph meta tags -->
+<meta property="og:title" content="[[*pagetitle]] – [[*longtitle]]">
+<meta property="og:type" content="website">
+<meta property="og:url" content="[[*id:is=`[[++site_start]]`:then=`[[++site_url]]`:else=`[[~[[*id]]? &scheme=`full`]]`]]">
+<meta property="og:image" content="https://[[++http_host]][[pthumb? &input=`[[*elr_og_image]]` &options=`w=1500&h=940&zc=1&f=jpg`]]">
+<meta property="og:image:alt" content="[[*elr_og_image_alt]]">
+<meta property="og:description" content="[[*description]]">
+<meta property="og:site_name" content="[[++site_name]]">
+<!-- Twitter meta tags -->
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="google-site-verification" content="">
+<title>[[*pagetitle:htmlentities]] | [[++site_name:htmlentities]]</title>
+<link rel="stylesheet" href="[[++fred.theme.euler.theme_dir]]css/main.css?v=2.0.0-alpha.6">
+<link rel="stylesheet" href="[[++fred.theme.euler.theme_dir]]css/fred.css">
+
+[[!+modx.user.id:is=`0`:then=`[[++fred.theme.euler.script_analytics]]`:else=``]]

@@ -1,0 +1,23 @@
+.fred--active [data-fred-dropzone] {
+    border: cyan solid 4px;
+}
+
+.fred--block:has( .modal.show) {
+    z-index: 1055;
+}
+
+.fred a, .fred--toolbar a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+
+    &:hover, &:active {
+        text-decoration: none;
+        color: inherit;
+        background-color: transparent;
+    }
+
+    &:visited {
+        color: inherit;
+    }
+}

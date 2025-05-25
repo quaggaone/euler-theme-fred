@@ -1,0 +1,30 @@
+id: 5
+source: 1
+templatename: 'euler Partner'
+category: 'euler Theme'
+icon: fa-handshake
+properties: 'a:2:{s:15:"elrTemplateName";a:7:{s:4:"name";s:15:"elrTemplateName";s:4:"desc";s:0:"";s:4:"type";s:9:"textfield";s:7:"options";a:0:{}s:5:"value";s:7:"partner";s:7:"lexicon";N;s:4:"area";s:0:"";}s:15:"elrTemplateType";a:7:{s:4:"name";s:15:"elrTemplateType";s:4:"desc";s:0:"";s:4:"type";s:9:"textfield";s:7:"options";a:0:{}s:5:"value";s:4:"blog";s:7:"lexicon";N;s:4:"area";s:0:"";}}'
+
+-----
+
+<!DOCTYPE html>
+<html>
+<head>
+    [[$elr_head]]
+</head>
+
+<body class="[[*elr_theme_color]]">
+    [[$elr_header]]
+    
+    <main>
+        [[$elr_layout_card?
+            &contentPrimaryHeading=`Kurzbeschreibung`
+            &contentSecondaryHeading=`Warum dieser Partner wertvoll ist`
+        ]]
+    </main>
+    
+    [[$elr_footer]]
+    
+    [[$elr_scripts]]
+</body>
+</html>

@@ -29,6 +29,91 @@ data:
         class: FredBlueprint
         primary: id
         extension: .json
+    fred_themed_template:
+        class: FredThemedTemplate
+        primary: template
+    namespaces:
+        class: modNamespace
+        primary: name
+        where:
+            - { name: fred_theme_euler }
+    system_settings:
+        class: modSystemSetting
+        primary: key
+        where:
+            - { namespace: fred_theme_euler }
+        exclude_keys:
+            - editedon
+            - createdon
+    contexts:
+        class: modContext
+        primary: key
+    context_settings:
+        class: modContextSetting
+        primary:
+            - context_key
+            - key
+    content:
+        type: content
+        exclude_keys:
+            - editedby
+            - editedon
+    categories:
+        class: modCategory
+        primary: category
+        where:
+            - { category: 'euler Theme' }
+    templates:
+        class: modTemplate
+        primary: templatename
+        where:
+            - { category: 2 }
+        extension: .html
+    template_variables:
+        class: modTemplateVar
+        primary: name
+        where:
+            - { category: 2 }
+    template_variables_access:
+        class: modTemplateVarTemplate
+        primary:
+            - tmplvarid
+            - templateid
+    chunks:
+        class: modChunk
+        primary: name
+        where:
+            - { category: 2 }
+        extension: .html
+    snippets:
+        class: modSnippet
+        primary: name
+        where:
+            - { category: 2 }
+        extension: .php
+    plugins:
+        class: modPlugin
+        primary: name
+        where:
+            - { category: 2 }
+        extension: .php
+    plugin_events:
+        class: modPluginEvent
+        primary:
+            - pluginid
+            - event
+        where:
+            - { event: FredOnElfinderRoots }
+    mediasources:
+        class: modMediaSource
+        primary: id
+    mediasource_elements:
+        class: sources.modMediaSourceElement
+        primary:
+            - source
+            - object_class
+            - object
+            - context_key
 packages:
     modx.com:
         service_url: 'https://rest.modx.com/extras/'

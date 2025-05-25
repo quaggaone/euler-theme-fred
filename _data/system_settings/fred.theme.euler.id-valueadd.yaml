@@ -1,0 +1,4 @@
+key: fred.theme.euler.id_valueadd
+value: '7'
+xtype: numberfield
+namespace: fred_theme_euler

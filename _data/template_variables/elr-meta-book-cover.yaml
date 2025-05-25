@@ -1,0 +1,13 @@
+id: 30
+source: 3
+type: image
+name: elr_meta_book_cover
+caption: 'Book Cover'
+category: 'euler Theme'
+elements: ''
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: 'a:1:{s:10:"allowBlank";s:4:"true";}'
+output_properties: 'a:0:{}'
+content: ''

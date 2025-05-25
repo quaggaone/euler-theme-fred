@@ -1,0 +1,155 @@
+id: 6
+source: 1
+name: elr_header
+description: ''
+category: 'euler Theme'
+properties: 'a:0:{}'
+
+-----
+
+<header class="elr-header [[+elrTemplateType:is=`blog`:then=`elr-header--blog`:else=`[[*elr_header_modifier]]`]]">
+    <nav class="elr-navbar">
+        <div class="elr-navbar__container">
+            <a href="[[~[[++site_start]]]]" class="elr-navbar__brand">
+                <img class="elr-navbar__logo elr-navbar__logo--black-text" src="[[++fred.theme.euler.logo_inline_black]]" alt="logo">
+                <img class="elr-navbar__logo elr-navbar__logo--white-text" src="[[++fred.theme.euler.logo_inline_white]]" alt="logo">
+            </a>
+            <button class="elr-navbar__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#elr-navbar__collapse" aria-controls="elr-navbar__collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="elr-navbar__collapse collapse" id="elr-navbar__collapse">
+                [[pdoMenu?
+                    &parents=`-[[++fred.theme.euler.id_info]]`
+                    &level=`2`
+                    &resources=`-[[++site_start]]`
+                    &checkPermissions=`list`
+                    &previewUnpublished=`1`
+                    &tplOuter=`elr_tpl_nav_outer`
+                    &tpl=`elr_tpl_nav_item`
+                    &tplHere=`elr_tpl_nav_item_here`
+                    &tplParentRow=`elr_tpl_nav_parent_row`
+                    &tplParentRowHere=`elr_tpl_nav_parent_here`
+                    &tplInner=`elr_tpl_nav_inner`
+                    &tplInnerRow=`elr_tpl_nav_inner_row`
+                    &tplInnerHere=`elr_tpl_nav_inner_here`
+                ]]
+            </div>
+        </div>
+    </nav>
+    <div class="elr-hero">    
+        <div class="elr-hero__container">
+            <div class="elr-hero__col elr-hero__col--content">
+                [[+elrTemplateType:is=`blog`:then=`
+                    <div class="elr-hero__main">
+                        <h1 class="elr-hero__title">
+                            [[*pagetitle]]
+                        </h1>
+                    </div>
+                `:else=`
+                    <div class="elr-hero__main">
+                        <h1 class="elr-hero__title">
+                            [[*longtitle]]
+                        </h1>
+                        <div class="elr-hero__subtitle">
+                            [[*elr_subtitle]]
+                        </div>
+                        [[-<div class="elr-hero__cta">
+                            <a href="" class="btn">Browse</a>
+                        </div>]]
+                    </div>
+                    <div class="elr-hero__supplement">
+                        <div class="elr-hero__introtext">
+                            [[*introtext]]
+                        </div>
+                    </div>
+                `]]
+            </div>
+            <div class="elr-hero__col elr-hero__col--media">
+                <img src="[[++base_url]][[*elr_og_image]]" alt="[[*elr_og_image_alt]]">
+            </div>
+        </div>
+    </div>
+    [[+elrTemplateType:is=`blog`:then=`
+        <div class="elr-meta">
+            <div class="elr-meta__container">
+                <div class="elr-meta__col elr-meta__col--side-start">
+
+                </div>
+                <div class="elr-meta__col elr-meta__col--main">
+                    <div class="elr-pill-group">
+                        <div class="elr-pill-group__wrapper">
+                            [[*elr_tag_actionarea:notempty=`
+                                <a href="[[~[[*elr_tag_actionarea]]]]" class="elr-pill-group__item elr-pill-group__item--link [[pdoField?&id=`[[*elr_tag_actionarea]]`&field=`elr_theme_color`]]">[[pdoField?&id=`[[*elr_tag_actionarea]]`&field=`pagetitle`]]</a>
+                            `]]
+                            [[*elr_tag_valueadd:notempty=`
+                                <a href="[[~[[*elr_tag_valueadd]]]]" class="elr-pill-group__item elr-pill-group__item--link [[pdoField?&id=`[[*elr_tag_valueadd]]`&field=`elr_theme_color`]]">[[pdoField?&id=`[[*elr_tag_valueadd]]`&field=`pagetitle`]]</a>
+                            `]]
+                        </div>
+                    </div>
+                </div>
+                <div class="elr-meta__col elr-meta__col--side-end">
+
+                </div>
+            </div>
+            <div class="elr-meta__container">
+                <div class="elr-meta__col elr-meta__col--side-start">
+                    <div class="elr-meta__media">
+                        <img src="[[+elrTemplateName:is=`book`:then=`[[*elr_meta_book_cover]]`]][[+elrTemplateName:is=`partner`:then=`[[*elr_meta_logo]]`]][[+elrTemplateName:is=`teammember`:then=`[[*elr_team_image]]`]]" alt="">
+                    </div>
+                </div>
+                <div class="elr-meta__col elr-meta__col--main">
+                    [[+elrTemplateName:isnot=`partner`:then=`<h2>[[*longtitle]]</h2>`]]
+                    <h3>[[*elr_subtitle]]</h3>
+                    <p>[[*introtext]]</p>
+                    [[+elrTemplateName:is=`partner`:then=`
+                        <div class="elr-meta__table">
+                            <table class="elr-table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Unternehmen</th>
+                                        <td>[[*longtitle]]</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Adresse</th>
+                                        <td>[[*elr_meta_address]]</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Branche</th>
+                                        <td>[[*elr_meta_industry]]</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Kompetenzfeld</th>
+                                        <td>[[*elr_meta_expertise]]</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">URL</th>
+                                        <td><a href="[[*elr_meta_url]]" target="_blank">[[*elr_meta_url]]</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    `]]
+                    <div class="elr-meta__info">
+                        [[*elr_meta_associatedperson:notempty=`
+                            <div class="elr-meta__author">
+                                <img src="[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`elr_team_image`]]" alt="">
+                                <span>[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`longtitle`]]</span>
+                            </div>
+                        `]]
+                        <div class="elr-meta__published">
+                            <span>[[*publishedon:date=`%d.%m.%Y`]]</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="elr-meta__col elr-meta__col--side-end">
+                    <div class="elr-pill-group">
+                        <small class="elr-pill-group__title">Topics</small>
+                        <div class="elr-pill-group__wrapper">
+                            [[*elr_meta_tag:elrListToSpan=`elr-pill-group__item`]]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `]]
+</header>

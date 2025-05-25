@@ -1,0 +1,13 @@
+id: 7
+source: 1
+type: url
+name: elr_meta_url
+caption: 'Associated URL'
+category: 'euler Theme'
+elements: null
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: 'a:1:{s:10:"allowBlank";s:4:"true";}'
+output_properties: 'a:0:{}'
+content: ''

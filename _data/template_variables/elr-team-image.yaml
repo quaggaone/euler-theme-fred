@@ -1,0 +1,14 @@
+id: 27
+source: 3
+type: image
+name: elr_team_image
+caption: 'Team Member Image'
+description: 'with transparent cutout background'
+category: 'euler Theme'
+elements: null
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: 'a:1:{s:10:"allowBlank";s:4:"true";}'
+output_properties: 'a:0:{}'
+content: ''

@@ -1,0 +1,25 @@
+id: 21
+source: 1
+name: elr_tpl_card
+description: ''
+category: 'euler Theme'
+properties: 'a:0:{}'
+
+-----
+
+<div class="elr-card [[+tv.elr_theme_color]]">
+    <a class="elr-card__container" href="[[~[[+id]]]]">
+        <div class="elr-card__media">
+            <img src="[[+tv.elr_og_image]]" alt="[[+tv.elr_og_image_alt]]">
+        </div>
+        <div class="elr-card__body">
+            <div class="elr-card__subtitle">
+                [[++fred.theme.euler.name_[[elrGetTemplatePorperty?&id=`[[+id]]`&property=`elrTemplateName`]]]]
+            </div>
+            <h3 class="elr-card__title">[[+pagetitle]]</h3>
+            <div class="__link-indicator">
+                [[-+template:is=`3`:then=`Read More`:else=`Learn More`]]
+            </div>
+        </div>
+    </a>
+</div>

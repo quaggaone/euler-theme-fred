@@ -1,0 +1,4 @@
+key: fred.theme.euler.id_team
+value: '15'
+xtype: numberfield
+namespace: fred_theme_euler

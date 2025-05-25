@@ -1,0 +1,13 @@
+id: 26
+source: 1
+type: freddropzone
+name: elr_layout_card_secondary
+caption: 'euler Layout Card Secondary Dropzone'
+category: 'euler Theme'
+elements: ''
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: 'a:1:{s:10:"hide_input";s:4:"true";}'
+output_properties: 'a:0:{}'
+content: ''

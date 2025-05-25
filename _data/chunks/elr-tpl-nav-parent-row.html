@@ -1,0 +1,17 @@
+id: 11
+source: 1
+name: elr_tpl_nav_parent_row
+description: ''
+category: 'euler Theme'
+properties: 'a:0:{}'
+
+-----
+
+<li class="elr-navbar__nav-item dropdown">
+    <a href="[[+link]]" class="elr-navbar__nav-link [[+classnames]]" [[+attributes]]>[[+menutitle]]</a>
+    <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+        <span class="visually-hidden">Toggle Dropdown</span>
+        <span class="bi bi-caret-down-fill"></span>
+    </button>
+    [[+wrapper]]
+</li>

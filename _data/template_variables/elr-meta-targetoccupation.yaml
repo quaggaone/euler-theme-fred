@@ -1,0 +1,13 @@
+id: 9
+source: 1
+type: autotag
+name: elr_meta_targetoccupation
+caption: 'Target Occupation'
+category: 'euler Theme'
+elements: null
+display: default
+default_text: ''
+properties: 'a:0:{}'
+input_properties: 'a:2:{s:10:"allowBlank";s:4:"true";s:16:"parent_resources";s:0:"";}'
+output_properties: 'a:1:{s:9:"delimiter";s:2:", ";}'
+content: ''

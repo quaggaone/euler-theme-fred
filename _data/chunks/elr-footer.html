@@ -1,0 +1,61 @@
+id: 7
+source: 1
+name: elr_footer
+description: ''
+category: 'euler Theme'
+properties: 'a:0:{}'
+
+-----
+
+<footer class="elr-footer">
+    <div class="elr-footer__container">
+        <div class="elr-footer__col elr-footer__col--connect">
+            <small>Was uns antreibt</small>
+            <h3>Innovate | Connect | Build</h3>
+            <p>
+                Ihr Wissen ist Ihr größtes Kapital. Wir helfen Ihnen, es gezielt zu erweitern, in die Praxis zu bringen und in nachhaltige Erfolge zu verwandeln. Mit der richtigen Methodik, Technologie und Strategie schaffen wir die Basis für Ihr Wachstum – als Unternehmen und als Mensch.
+            </p>
+            <div class="elr-footer__contact">
+                <h4>Wir w&uuml;rden uns freuen von Ihnen zu h&ouml;ren</h4>
+                <p>
+                    <span class="elr-footer__email">[[++fred.theme.euler.email_info]]</span>
+                </p>
+            </div>
+            <div class="elr-footer__social">
+                <a href="https://www.linkedin.com/[[++fred.theme.euler.social_linkedin]]" target="_blank"><span class="bi-linkedin"></span></a>
+                <a href="https://www.instagram.com/[[++fred.theme.euler.social_instagram]]" target="_blank"><span class="bi-instagram"></span></a>
+            </div>
+        </div>
+        <div class="elr-footer__col elr-footer__col--culture">
+            <small>Über [[++site_name]]</small>
+            <h3>Unternehmen nachhaltig stärken. Persönlichen Erfolg steigern.</h3>
+            <p>
+                Sie stehen vor Herausforderungen in CAD, Engineering, Change-Management oder strategischer Transformation? Wir bringen Klarheit in komplexe Themen, machen Wissen anwendbar und begleiten Sie mit praxisnahen Lösungen. Unser Ziel: Ihr Unternehmen zukunftssicher aufstellen, Ihre Mitarbeiter befähigen und gemeinsam Fortschritt gestalten – mit Wissen, das bleibt, und Strategien, die wirken.
+            </p>
+        </div>
+        <div class="elr-footer__col elr-footer__col--map">
+            <div class="elr-footer__locations">
+                <img src="[[++fred.theme.euler.theme_dir]]brand/map-germany.png" alt="World Map with Focus on Europe" class="elr-footer__map elr-footer__map--white">
+                <img src="[[++fred.theme.euler.theme_dir]]brand/map-germany.png" alt="World Map with Focus on Europe" class="elr-footer__map elr-footer__map--black">
+                <p class="elr-footer__cities">
+                    Mitten in Deutschland
+                </p>
+                <p class="elr-footer__country">
+                    Fulda
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="elr-footer__legal">
+        [[pdoMenu?
+            &parents=`[[++fred.theme.euler.id_info]]`
+            &level=`1`
+            &checkPermissions=`list`
+            &previewUnpublished=`1`
+        ]]
+    </div>
+    <div>
+        [[!+now:default=`now`:strtotime:date=`%Y`]] &copy; euler theme
+    </div>
+</footer>
