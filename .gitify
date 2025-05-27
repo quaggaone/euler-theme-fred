@@ -67,13 +67,13 @@ data:
         class: modTemplate
         primary: templatename
         where:
-            - { category: 2 }
+            - { category: 10 }
         extension: .html
     template_variables:
         class: modTemplateVar
         primary: name
         where:
-            - { category: 2 }
+            - { category: 10 }
     template_variables_access:
         class: modTemplateVarTemplate
         primary:
@@ -83,19 +83,19 @@ data:
         class: modChunk
         primary: name
         where:
-            - { category: 2 }
+            - { category: 10 }
         extension: .html
     snippets:
         class: modSnippet
         primary: name
         where:
-            - { category: 2 }
+            - { category: 10 }
         extension: .php
     plugins:
         class: modPlugin
         primary: name
         where:
-            - { category: 2 }
+            - { category: 10 }
         extension: .php
     plugin_events:
         class: modPluginEvent
