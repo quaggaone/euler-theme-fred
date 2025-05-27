@@ -105,7 +105,7 @@ data:
         where:
             - { event: FredOnElfinderRoots }
     mediasources:
-        class: modMediaSource
+        class: MODX\Revolution\Sources\modMediaSource
         primary: id
     mediasource_elements:
         class: sources.modMediaSourceElement
