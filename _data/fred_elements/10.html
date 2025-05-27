@@ -5,19 +5,20 @@ description: 'Text box for Zine entries'
 image: 'https://placehold.co/300x150?text=Blog+Text'
 category: 3
 rank: 3
+options_override: '{"settings":[{"fred-import":"sectionSpacer"}]}'
 
 -----
 
-<section class="elr-blog-text">
+<section class="elr-blog-text {{ sectionSpacer }}">
     <div class="elr-blog-text__container">
         <div class="elr-blog-text__col elr-blog-text__col--side-start" data-fred-name="side-start" data-fred-rte="true" data-fred-rte-config="paragraph">
-            
+
         </div>
         <div class="elr-blog-text__col elr-blog-text__col--main" data-fred-name="main" data-fred-rte="true" data-fred-rte-config="paragraph">
             Enter text here...
         </div>
         <div class="elr-blog-text__col elr-blog-text__col--side-end" data-fred-name="side-end" data-fred-rte="true" data-fred-rte-config="paragraph">
-            
+
         </div>
     </div>
 </section>

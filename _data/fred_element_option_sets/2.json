@@ -1,0 +1,8 @@
+id: 2
+name: sectionSpacer
+description: 'selector for the gap size after a section'
+theme: 2
+
+-----
+
+{"name":"sectionSpacer","label":"Section Spacer","type":"select","options":{"":"Default","--section-spacer-bottom-6":"Bottom Size 6","--section-spacer-bottom-7":"Bottom Size 7","--section-spacer-bottom-8":"Bottom Size 8","--section-spacer-bottom-9":"Bottom Size 9"},"value":""}

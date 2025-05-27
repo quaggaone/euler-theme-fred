@@ -10,6 +10,7 @@
   - TODO AFTER UPDATE: use gitify and database extraction to change all FRED Element settings to new class (inside `_data/content/web` folder)
 - ADDED `elr-grid` modifier: `row-cols-6` & `blog-style` (centered column at 50% width)
 - CHANGE all `headings` to a condensed font-family
+- ADDED section spacer modifiers to standalone and layout elements
 
 0.0.4-pl [2025-03-24]
 ---
