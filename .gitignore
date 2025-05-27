@@ -13,6 +13,9 @@
 !/assets/themes/euler
 # idk why but this series of excludes/includes seems to let me track only the euler folder inside the themes directory
 
+# php composer folder
+/vendor
+
 # IDE files (optional or add more) #
 ###################################
 .idea
