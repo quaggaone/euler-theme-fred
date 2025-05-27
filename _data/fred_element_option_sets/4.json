@@ -1,0 +1,8 @@
+id: 4
+name: objectFit
+description: 'object-fit options'
+theme: 2
+
+-----
+
+{"name":"objectFit","label":"Image Object Fit","type":"select","options":{"":"Default","elr--object-fit-cover":"cover","elr--object-fit-contain":"contain"},"value":""}

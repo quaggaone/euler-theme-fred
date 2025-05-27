@@ -5,11 +5,11 @@ description: 'Large pairs of images with heading and text'
 image: 'https://placehold.co/300x150?text=Display+List'
 category: 3
 rank: 1
-options_override: '{"settings":[{"name":"modifier","label":"Layout Modifier","type":"select","options":{" ":"Default","elr-display-list--alternating":"Alternating","elr-display-list--reverse":"Reverse","elr-display-list--alternating elr-display-list--reverse":"Reverse Alternating"},"value":" "},{"name":"length","label":"Number of Items","type":"slider","min":1,"max":10,"value":2},{"fred-import":"sectionSpacer"}]}'
+options_override: '{"settings":[{"name":"modifier","label":"Layout Modifier","type":"select","options":{" ":"Default","elr-display-list--alternating":"Alternating","elr-display-list--reverse":"Reverse","elr-display-list--alternating elr-display-list--reverse":"Reverse Alternating"},"value":" "},{"name":"length","label":"Number of Items","type":"slider","min":1,"max":10,"value":2},{"fred-import":"sectionSpacer"},{"fred-import":"aspectRatio"},{"fred-import":"objectFit"}]}'
 
 -----
 
-<section class="elr-display-list {{ modifier }} {{ sectionSpacer }}">
+<section class="elr-display-list {{ modifier }} {{ sectionSpacer }} {{ aspectRatio }} {{ objectFit }}">
     {% for i in 1..length %}
         <div class="elr-display-list__item">
             <div class="elr-display-list__col elr-display-list__col--content">

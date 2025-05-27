@@ -1,0 +1,8 @@
+id: 3
+name: aspectRatio
+description: 'aspect-ratio presets'
+theme: 2
+
+-----
+
+{"name":"aspectRatio","label":"Image Aspect Ratio","type":"select","options":{"":"Default","elr--aspect-ratio-1-1":"1\/1","elr--aspect-ratio-5-4":"5\/4","elr--aspect-ratio-16-10":"16\/10","elr--aspect-ratio-16-9":"16\/9","elr--aspect-ratio-2-1":"2\/1","elr--aspect-ratio-5-2":"5\/2"},"value":""}
