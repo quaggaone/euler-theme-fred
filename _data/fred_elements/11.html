@@ -14,6 +14,6 @@ options_override: '{"remote":true,"settings":[{"name":"length","label":"Number o
     &limit=`{{ length }}`
     &includeTVs=`elr_og_image,elr_og_image_alt,elr_subtitle,elr_theme_color`
     &tpl=`elr_tpl_card`
-    &tplWrapper=`@INLINE <section class="elr-grid elr-grid--row-cols-4 {{ modifier }}"><div class="elr-grid__container">[[+output]]</div>{% if length != 0 %}<div class="__btn"><a href="[[~{{parentPage.id}}]]" class="btn">Alle Lesen</a></div>{% endif %}</section>`
+    &tplWrapper=`@INLINE <section class="elr-grid {{ modifier }}"><div class="elr-grid__container elr-grid__container--row-cols-4">[[+output]]</div>{% if length != 0 %}<div class="__btn"><a href="[[~{{parentPage.id}}]]" class="btn">Alle Lesen</a></div>{% endif %}</section>`
     &tvFilters=`{% if actionarea.id > 0 %}elr_tag_actionarea=={{ actionarea.id }}{% endif %}{% if actionarea.id > 0 and valueadd.id > 0 %}{% if filterOperator == "&&" %},{% else %}{{filterOperator}}{% endif %}{% endif %}{% if valueadd.id > 0 %}elr_tag_valueadd=={{ valueadd.id }}{% endif %}`
 ]]<div class="container" data-fred-render="false">&uarr; There should be cards rendering here. They only show up if they are published. <br> If nothing shows up, please check this Elements settings. <br> Filter string: <code>{% if actionarea.id > 0 %}elr_tag_actionarea=={{ actionarea.id }}{% endif %}{% if actionarea.id > 0 and valueadd.id > 0 %}{% if filterOperator == "&&" %},{% else %}{{filterOperator}}{% endif %}{% endif %}{% if valueadd.id > 0 %}elr_tag_valueadd=={{ valueadd.id }}{% endif %}</code></div>

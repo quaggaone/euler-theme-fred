@@ -1,3 +1,12 @@
+0.0.5-pl []
+---
+- BREAKING `elr-grid` `row-cols` modifier now to apply on the container (not block root class)
+  - class has been renamed (now `elr-grid__container--modifier`)
+  - class is applied to `elr-grid__container` instead of `elr-grid`
+  - added explicit `--row-cols-1` modifier
+  - WHY: this fixes nesting issues with modals containing grids. (neccessary because of MODX implementation and usage -> "layer 3 content")
+  - TODO AFTER UPDATE: use gitify and database extraction to change all FRED Element settings to new class (inside `_data/content/web` folder)
+
 0.0.4-pl [2025-03-24]
 ---
 - added Snippet and System Setting for displaying Blog Types on Cards
