@@ -5,4 +5,4 @@ theme: 2
 
 -----
 
-{"name":"sectionSpacer","label":"Section Spacer","type":"select","options":{"":"Default","--section-spacer-bottom-6":"Bottom Size 6","--section-spacer-bottom-7":"Bottom Size 7","--section-spacer-bottom-8":"Bottom Size 8","--section-spacer-bottom-9":"Bottom Size 9"},"value":""}
+{"name":"sectionSpacer","label":"Section Spacer","type":"select","options":{"":"Default","elr--section-spacer-bottom-6":"Bottom Size 6","elr--section-spacer-bottom-7":"Bottom Size 7","elr--section-spacer-bottom-8":"Bottom Size 8","elr--section-spacer-bottom-9":"Bottom Size 9"},"value":""}
