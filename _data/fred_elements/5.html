@@ -4,17 +4,17 @@ uuid: 42e91379-993b-4a73-8b95-9e795944617f
 description: 'List of collapsible items with heading and text'
 image: 'https://placehold.co/300x150?text=Accordion'
 category: 2
-options_override: '{"settings":[{"fred-import":"colorModifier"},{"name":"id","label":"Accordion ID (no spaces; must be unqiue on page)","type":"text","value":"1"},{"name":"length","label":"Number of Items","type":"slider","min":1,"max":10,"value":4}]}'
+options_override: '{"settings":[{"fred-import":"colorModifier"},{"name":"identifier","label":"Accordion ID (no spaces; must be unqiue on page)","type":"text","value":"1"},{"name":"length","label":"Number of Items","type":"slider","min":1,"max":10,"value":4}]}'
 
 -----
 
-<div class="elr-accordion {{ colorModifier }}" id="accordion-{{ id }}">
+<div class="elr-accordion {{ colorModifier }}" id="accordion-{{ identifier }}">
     {% for i in 1..length %}
         <div class="elr-accordion__item">
-            <h2 class="elr-accordion__header" id="heading-{{ id }}-{{i}}">
-                <button class="elr-accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ id }}-{{i}}" aria-expanded="false" aria-controls="collapse-{{ id }}-{{i}}"><span data-fred-name="summary-{{i}}" data-fred-rte="true">Insert heading here...</span></button>
+            <h2 class="elr-accordion__header" id="heading-{{ identifier }}-{{i}}">
+                <button class="elr-accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ identifier }}-{{i}}" aria-expanded="false" aria-controls="collapse-{{ identifier }}-{{i}}"><span data-fred-name="summary-{{i}}" data-fred-rte="true">Insert heading here...</span></button>
             </h2>
-            <div id="collapse-{{ id }}-{{i}}" class="elr-accordion__collapse collapse" aria-labelledby="heading-{{ id }}-{{i}}" data-bs-parent="#accordion-{{ id }}">
+            <div id="collapse-{{ identifier }}-{{i}}" class="elr-accordion__collapse collapse" aria-labelledby="heading-{{ identifier }}-{{i}}" data-bs-parent="#accordion-{{ identifier }}">
                 <div class="elr-accordion__body" data-fred-name="content-{{i}}" data-fred-rte="true" data-fred-rte-config="paragraph-minimal">
                     Insert text here...
                 </div>
