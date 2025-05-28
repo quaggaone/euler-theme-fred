@@ -54,7 +54,9 @@ data:
             - context_key
             - key
     content:
-        type: content
+        clclass: modDocument
+        class: modDocument
+        primary: id
         exclude_keys:
             - editedby
             - editedon
