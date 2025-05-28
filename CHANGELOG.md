@@ -1,4 +1,4 @@
-0.0.5-pl []
+0.0.5-pl [2025-05-28]
 ---
 - CHANGE removed `card` padding around media
 - FIX image aspect-ratio not working on `card` media
@@ -11,6 +11,7 @@
 - ADDED `elr-grid` modifier: `row-cols-6` & `blog-style` (centered column at 50% width)
 - CHANGE all `headings` to a condensed font-family
 - ADDED section spacer modifiers to standalone and layout elements
+- ADDED `aspect-ratio` and `object-fit` adjustments for many images elements/containers
 
 0.0.4-pl [2025-03-24]
 ---
