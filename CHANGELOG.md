@@ -1,4 +1,4 @@
-0.0.6-pl []
+0.0.6-pl [2025-05-30]
 ---
 - ADDED filter by blog template for `populated grid`
 - FIXED layout modifier for `populated grid`
