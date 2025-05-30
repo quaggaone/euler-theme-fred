@@ -5,4 +5,4 @@ theme: 2
 
 -----
 
-{"name":"modifier","label":"Layout Modifier","type":"select","options":{"elr-grid__container--row-cols-1":"1 Column","elr-grid__container--row-cols-2":"2 Columns","elr-grid__container--row-cols-3":"3 Columns","elr-grid__container--row-cols-4":"4 Columns","elr-grid__container--row-cols-6":"6 Clomuns","elr-grid__container--blog-style":"Blog Style","elr-grid__container--featured":"Featured"},"value":"elr-grid__container--row-cols-3"}
+{"name":"modifier","label":"Layout Modifier","type":"select","options":{"elr-grid__container--row-cols-1":"1 Column","elr-grid__container--row-cols-2":"2 Columns","elr-grid__container--row-cols-3":"3 Columns","elr-grid__container--row-cols-4":"4 Columns","elr-grid__container--row-cols-5":"5 Columns","elr-grid__container--row-cols-6":"6 Clomuns","elr-grid__container--blog-style":"Blog Style","elr-grid__container--featured":"Featured"},"value":"elr-grid__container--row-cols-3"}

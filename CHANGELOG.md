@@ -3,6 +3,13 @@
 - ADDED filter by blog template for `populated grid`
 - FIXED layout modifier for `populated grid`
 - ADDED `aspect-ratio` and `object-fit` options to regular `grid`
+- FIX `elr-card` layout (text spacing and media handling)
+- ADDED `elr-grid` modifier: `row-cols-5`
+- ADDED `elr-card__logo` class for company logos on cards
+- CHANGE look of links (`elr-link()` mixin)
+- CHANGE removed borders/padding on `elr-cta`
+- ADDED `elr-header` height modifier classes
+- ADDED `elr-header` `--bg-media-medium` option (with colored bg on text-box)
 
 0.0.5-pl [2025-05-28]
 ---

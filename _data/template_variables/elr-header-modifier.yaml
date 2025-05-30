@@ -4,7 +4,7 @@ type: option
 name: elr_header_modifier
 caption: 'Header Layout Modifier'
 category: 'euler Theme'
-elements: 'Default==||Media Background==elr-header--bg-media||Only Text==elr-header--only-text||No Hero==elr-header--no-hero'
+elements: 'Default==||Media Background==elr-header--bg-media||Media Background Medium==elr-header--bg-media-medium||Only Text==elr-header--only-text||No Hero==elr-header--no-hero'
 display: default
 default_text: ''
 properties: 'a:0:{}'
