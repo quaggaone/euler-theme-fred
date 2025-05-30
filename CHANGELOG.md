@@ -10,6 +10,8 @@
 - CHANGE removed borders/padding on `elr-cta`
 - ADDED `elr-header` height modifier classes
 - ADDED `elr-header` `--bg-media-medium` option (with colored bg on text-box)
+- FIX footer company name (use setting `site_name`)
+- FIX footer LinkedIn link
 
 0.0.5-pl [2025-05-28]
 ---
