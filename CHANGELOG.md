@@ -1,3 +1,9 @@
+0.0.6-pl []
+---
+- ADDED filter by blog template for `populated grid`
+- FIXED layout modifier for `populated grid`
+- ADDED `aspect-ratio` and `object-fit` options to regular `grid`
+
 0.0.5-pl [2025-05-28]
 ---
 - CHANGE removed `card` padding around media
