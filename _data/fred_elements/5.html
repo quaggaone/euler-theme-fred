@@ -12,7 +12,7 @@ options_override: '{"settings":[{"fred-import":"colorModifier"},{"name":"identif
     {% for i in 1..length %}
         <div class="elr-accordion__item">
             <h2 class="elr-accordion__header" id="heading-{{ identifier }}-{{i}}">
-                <button class="elr-accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ identifier }}-{{i}}" aria-expanded="false" aria-controls="collapse-{{ identifier }}-{{i}}"><span data-fred-name="summary-{{i}}" data-fred-rte="true">Insert heading here...</span></button>
+                <button class="elr-accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ identifier }}-{{i}}" aria-expanded="false" aria-controls="collapse-{{ identifier }}-{{i}}" data-fred-name="summary-{{i}}" data-fred-rte="true">Insert heading here...</button>
             </h2>
             <div id="collapse-{{ identifier }}-{{i}}" class="elr-accordion__collapse collapse" aria-labelledby="heading-{{ identifier }}-{{i}}" data-bs-parent="#accordion-{{ identifier }}">
                 <div class="elr-accordion__body" data-fred-name="content-{{i}}" data-fred-rte="true" data-fred-rte-config="paragraph-minimal">
