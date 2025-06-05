@@ -54,7 +54,6 @@ data:
             - context_key
             - key
     content:
-        clclass: modDocument
         class: modDocument
         primary: id
         exclude_keys:

@@ -1,3 +1,9 @@
+0.0.7-pl []
+---
+- FIXED `elr-header--bg-media-medium` background color in dark mode
+- FIX make `elr-card` titles smaller for high-column grids
+- FIX `elr-accordion` button `font-width` to support custom formatting
+
 0.0.6-pl [2025-05-30]
 ---
 - ADDED filter by blog template for `populated grid`
