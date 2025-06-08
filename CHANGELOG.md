@@ -1,4 +1,4 @@
-0.0.7-pl []
+0.0.7-pl [2025-06-08]
 ---
 - FIXED `elr-header--bg-media-medium` background color in dark mode
 - FIX make `elr-card` titles smaller for high-column grids
