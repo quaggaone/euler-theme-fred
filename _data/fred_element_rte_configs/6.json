@@ -1,0 +1,7 @@
+id: 6
+name: inline
+theme: 2
+
+-----
+
+{"theme":"inlite","inline":true,"plugins":"modxlink lists","insert_toolbar":" ","selection_toolbar":"bold italic","image_advtab":true,"imagetools_toolbar":"alignleft aligncenter alignright | rotateleft rotateright | flipv fliph | editimage imageoptions","auto_focus":false,"branding":false,"relative_urls":false,"image_dimensions":false,"text_patterns":[{"start":"*","end":"*","format":"italic"},{"start":"**","end":"**","format":"bold"}],"invalid_elements":"h1,h2,h3,h4,h5,h6,span","valid_styles":{"*":""},"valid_classes":{"*":""}}

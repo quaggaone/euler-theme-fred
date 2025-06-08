@@ -3,6 +3,7 @@
 - FIXED `elr-header--bg-media-medium` background color in dark mode
 - FIX make `elr-card` titles smaller for high-column grids
 - FIX `elr-accordion` button `font-width` to support custom formatting
+- ADDED `elr-accordion` custom formattting for button
 
 0.0.6-pl [2025-05-30]
 ---
