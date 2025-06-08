@@ -14,7 +14,15 @@ properties: 'a:0:{}'
         </div>
         <div class="elr-card__body">
             <div class="elr-card__subtitle">
-                [[++fred.theme.euler.name_[[elrGetTemplatePorperty?&id=`[[+id]]`&property=`elrTemplateName`]]]]
+                [[elrGetTemplatePorperty:is=`teammember`
+                    :then=`
+                        [[+tv.elr_team_title]]
+                    `:else=`
+                        [[++fred.theme.euler.name_[[elrGetTemplatePorperty?&id=`[[+id]]`&property=`elrTemplateName`]]]]
+                    `?
+                    &id=`[[+id]]`
+                    &property=`elrTemplateName`
+                ]]
             </div>
             <h3 class="elr-card__title">[[+pagetitle]]</h3>
             <div class="__link-indicator">

@@ -12,7 +12,7 @@ options_override: '{"remote":true,"settings":[{"name":"length","label":"Number o
     &parents=`{% if not parentPage %}[[++fred.theme.euler.id_info]]{% endif %}{{parentPage.id}}`
     &depth=`1`
     &limit=`{{ length }}`
-    &includeTVs=`elr_og_image,elr_og_image_alt,elr_subtitle,elr_theme_color`
+    &includeTVs=`elr_og_image,elr_og_image_alt,elr_subtitle,elr_theme_color,elr_team_title`
     &tpl=`elr_tpl_card`
     &tplWrapper=`@INLINE <section class="elr-grid {{ sectionSpacer }} {{ aspectRatio }} {{ objectFit }}"><div class="elr-grid__container {{ modifier }}">[[+output]]</div>{% if length != 0 %}<div class="__btn"><a data-fred-link-type="page" data-fred-link-page="{{ referencePage.id }}" class="btn"><span data-fred-name="reference-text" data-fred-rte="true">Alle Lesen</span></a></div>{% endif %}</section>`
     &tvFilters=`{% if actionarea.id > 0 %}elr_tag_actionarea=={{ actionarea.id }}{% endif %}{% if actionarea.id > 0 and valueadd.id > 0 %}{% if filterOperator == "&&" %},{% else %}{{filterOperator}}{% endif %}{% endif %}{% if valueadd.id > 0 %}elr_tag_valueadd=={{ valueadd.id }}{% endif %}`

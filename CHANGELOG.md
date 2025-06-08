@@ -6,6 +6,7 @@
 - ADDED `elr-accordion` custom formattting for button
 - ADDED `populated grid` custom link+text for further reading reference
 - FIX cards on `populated grid` now behave as proper links
+- ADD `team member title` to front of card
 
 0.0.6-pl [2025-05-30]
 ---

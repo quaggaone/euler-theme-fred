@@ -12,7 +12,7 @@ createdon: 1742749481
 publishedon: 1742749620
 publishedby: 1
 uri: ''
-properties: '{"contentblocks":{"_isContentBlocks":false},"fred":{"data":{"fingerprint":"7ad976beab0f85176b6994de9a149550045721cf"}}}'
+properties: '{"contentblocks":{"_isContentBlocks":false},"fred":{"data":{"fingerprint":"451e5167fd8d6f7b97122becf6c15239a71c2132"}}}'
 tvs:
     elr_meta_tag: ''
     elr_meta_url: ''
@@ -21,5 +21,5 @@ tvs:
     elr_subtitle: 'Das ist der Subtitle'
     elr_team_image: fabrizio-conti-rMWmDMeaoBk-unsplash.jpg
     elr_team_linkedin: ''
-    elr_team_title: ''
+    elr_team_title: 'das ist bernds titel'
     elr_theme_color: '--gold'
