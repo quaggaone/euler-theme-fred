@@ -7,7 +7,7 @@ properties: 'a:0:{}'
 
 -----
 
-<div class="elr-card [[+tv.elr_theme_color]]">
+<div class="elr-card elr-card--link [[+tv.elr_theme_color]]">
     <a class="elr-card__container" href="[[~[[+id]]]]">
         <div class="elr-card__media">
             <img src="[[+tv.elr_og_image]]" alt="[[+tv.elr_og_image_alt]]">
@@ -17,9 +17,9 @@ properties: 'a:0:{}'
                 [[++fred.theme.euler.name_[[elrGetTemplatePorperty?&id=`[[+id]]`&property=`elrTemplateName`]]]]
             </div>
             <h3 class="elr-card__title">[[+pagetitle]]</h3>
-            <!-- <div class="__link-indicator">
-                [[-+template:is=`3`:then=`Read More`:else=`Learn More`]]
-            </div> -->
+            <div class="__link-indicator">
+                Learn More
+            </div>
         </div>
     </a>
 </div>

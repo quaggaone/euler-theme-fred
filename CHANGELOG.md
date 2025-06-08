@@ -4,6 +4,8 @@
 - FIX make `elr-card` titles smaller for high-column grids
 - FIX `elr-accordion` button `font-width` to support custom formatting
 - ADDED `elr-accordion` custom formattting for button
+- ADDED `populated grid` custom link+text for further reading reference
+- FIX cards on `populated grid` now behave as proper links
 
 0.0.6-pl [2025-05-30]
 ---
