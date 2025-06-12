@@ -138,10 +138,15 @@ properties: 'a:0:{}'
                                     <span>[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`longtitle`]]</span>
                                 </a>
                             `]]
+                            [[+elrTemplateName:is=`teammember`:then=`<a href="https://www.linkedin.com/in/[[*elr_team_linkedin]]" target="_blank"><span class="bi-linkedin"></span></a>`]]
                         </div>
                         <div class="elr-meta__info-end">
                             <div class="elr-meta__published">
-                                <span>[[*publishedon:date=`%d.%m.%Y`]]</span>
+                                [[+elrTemplateName
+                                    :isnot=`teammember`
+                                    :then=`<span>[[*publishedon:date=`%d.%m.%Y`]]</span>`
+                                    :else=``
+                                ]]
                             </div>
                         </div>
                     </div>

@@ -12,7 +12,7 @@ createdon: 1742749481
 publishedon: 1742749620
 publishedby: 1
 uri: ''
-properties: '{"contentblocks":{"_isContentBlocks":false},"fred":{"data":{"fingerprint":"f4f7ef895bb011c97ed34e21c80debacbe46c1e6"}}}'
+properties: '{"contentblocks":{"_isContentBlocks":false},"fred":{"data":{"fingerprint":"d59211786762b72a8865d1d12d27ca0e95c4efb7"}}}'
 tvs:
     elr_meta_tag: ''
     elr_meta_url: ''
@@ -20,6 +20,6 @@ tvs:
     elr_og_image_alt: ''
     elr_subtitle: 'Das ist der Subtitle'
     elr_team_image: ilham-putra-dY8F7ZlZvYU-unsplash.jpg
-    elr_team_linkedin: ''
+    elr_team_linkedin: bernd
     elr_team_title: 'das ist bernds titel'
     elr_theme_color: '--gold'
