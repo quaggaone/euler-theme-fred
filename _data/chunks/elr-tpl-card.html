@@ -11,39 +11,44 @@ properties: 'a:0:{}'
     <a class="elr-card__container" href="[[~[[+id]]]]">
         <div class="elr-card__media">
             <img
-                src="[[elrGetTemplatePorperty:select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`:isempty=`
-                        [[+tv.elr_og_image]]
-                    `?
+                src="[[elrGetTemplatePorperty
+                    :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
+                    :isempty=`[[+tv.elr_og_image]]`
+                    ?
                     &id=`[[+id]]`
                     &property=`elrTemplateName`
                 ]]"
-                alt="[[elrGetTemplatePorperty:select=`teammember=[[+pagetitle]]&book=[[+tv.pagetitle]]`:isempty=`
-                        [[+tv.elr_og_image_alt]]
-                    `?
+                alt="[[elrGetTemplatePorperty
+                    :select=`teammember=[[+pagetitle]]&book=[[+tv.pagetitle]]`
+                    :isempty=`[[+tv.elr_og_image_alt]]`
+                    ?
                     &id=`[[+id]]`
                     &property=`elrTemplateName`
                 ]]"
-                class="[[elrGetTemplatePorperty:select=`teammember=elr--aspect-ratio-1-1&book=elr--object-fit-contain`:isempty=``?
+                class="[[elrGetTemplatePorperty
+                    :select=`teammember=elr--aspect-ratio-1-1&book=elr--object-fit-contain`
+                    :isempty=``
+                    ?
                     &id=`[[+id]]`
                     &property=`elrTemplateName`
                 ]]"
             >
-            [[elrGetTemplatePorperty:is=`partner`
-                :then=`
-                    <img src="[[+tv.elr_meta_logo]]" alt="[[+pagetitle]] Logo" class="elr-card__logo">
-                `:else=``?
+            [[elrGetTemplatePorperty
+                :is=`partner`
+                :then=`<img src="[[+tv.elr_meta_logo]]" alt="[[+pagetitle]] Logo" class="elr-card__logo">`
+                :else=``
+                ?
                 &id=`[[+id]]`
                 &property=`elrTemplateName`
             ]]
         </div>
         <div class="elr-card__body">
             <div class="elr-card__subtitle">
-                [[elrGetTemplatePorperty:is=`teammember`
-                    :then=`
-                        [[+tv.elr_team_title]]
-                    `:else=`
-                        [[++fred.theme.euler.name_[[elrGetTemplatePorperty?&id=`[[+id]]`&property=`elrTemplateName`]]]]
-                    `?
+                [[elrGetTemplatePorperty
+                    :is=`teammember`
+                    :then=`[[+tv.elr_team_title]]`
+                    :else=`[[++fred.theme.euler.name_[[elrGetTemplatePorperty?&id=`[[+id]]`&property=`elrTemplateName`]]]]`
+                    ?
                     &id=`[[+id]]`
                     &property=`elrTemplateName`
                 ]]
