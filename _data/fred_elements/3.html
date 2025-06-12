@@ -4,11 +4,11 @@ uuid: 583c4f09-9424-44dc-9b6e-9e7952c21050
 description: 'Grid for nesting other blocks'
 image: 'https://placehold.co/300x150?text=Grid'
 category: 1
-options_override: '{"settings":[{"fred-import":"colorModifier"},{"fred-import":"gridModifierLayout"},{"fred-import":"sectionSpacer"},{"group":"Image Options","settings":[{"fred-import":"aspectRatio"},{"fred-import":"objectFit"}]}]}'
+options_override: '{"settings":[{"fred-import":"colorModifier"},{"fred-import":"gridModifierLayout"},{"fred-import":"sectionSpacer"},{"group":"Image Options","settings":[{"fred-import":"aspectRatio"},{"fred-import":"objectFit"}]},{"fred-import":"styleModifier"}]}'
 
 -----
 
-<section class="elr-grid {{ colorModifier }} {{ sectionSpacer }} {{ aspectRatio }} {{ objectFit }}">
+<section class="elr-grid {{ colorModifier }} {{ sectionSpacer }} {{ aspectRatio }} {{ objectFit }} {{ styleModifier }}">
     <div class="elr-grid__container {{ modifier }}" data-fred-dropzone="content" data-fred-min-height="250px">
 
     </div>

@@ -5,11 +5,11 @@ description: 'Container for featuring a nested Element'
 image: 'https://placehold.co/300x150?text=Feature+Box'
 category: 1
 rank: 1
-options_override: '{"settings":[{"fred-import":"colorModifier"},{"name":"modifier","label":"Layout Modifier","type":"select","options":{" ":"Default","elr-feature-box--important":"Important","elr-feature-box--reverse":"Reverse","elr-feature-box--important elr-feature-box--reverse":"Reverse Important"},"value":" "},{"fred-import":"sectionSpacer"}]}'
+options_override: '{"settings":[{"fred-import":"colorModifier"},{"name":"modifier","label":"Layout Modifier","type":"select","options":{" ":"Default","elr-feature-box--important":"Important","elr-feature-box--reverse":"Reverse","elr-feature-box--important elr-feature-box--reverse":"Reverse Important"},"value":" "},{"fred-import":"sectionSpacer"},{"fred-import":"styleModifier"}]}'
 
 -----
 
-<section class="elr-feature-box {{ modifier }} {{ colorModifier }} {{ sectionSpacer }}">
+<section class="elr-feature-box {{ modifier }} {{ colorModifier }} {{ sectionSpacer }} {{ styleModifier }}">
     <div class="elr-feature-box__container">
         <div class="elr-feature-box__col elr-feature-box__col--desc">
             <div data-fred-name="desc" data-fred-rte="true" data-fred-rte-config="paragraph">

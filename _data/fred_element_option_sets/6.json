@@ -1,0 +1,8 @@
+id: 6
+name: styleModifier
+description: 'style options for inheritance'
+theme: 2
+
+-----
+
+{"name":"styleModifier","label":"Style Modifier","type":"select","options":{"":"Inherit","elr--default":"Default","elr--transparent":"Transparent"},"value":""}
