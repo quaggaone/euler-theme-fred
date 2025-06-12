@@ -1,4 +1,4 @@
-0.0.8-pl []
+0.0.8-pl [2025-06-13]
 ---
 - ADD global `elr-subtitle` mixin
 - ADD title class for team-member pages
