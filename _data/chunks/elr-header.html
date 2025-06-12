@@ -99,6 +99,7 @@ properties: 'a:0:{}'
                 </div>
                 <div class="elr-meta__col elr-meta__col--main">
                     [[+elrTemplateName:isnot=`partner`:then=`<h2>[[*longtitle]]</h2>`]]
+                    [[+elrTemplateName:is=`teammember`:then=`<p class="elr-meta__title">[[*elr_team_title]]</p>`]]
                     <h3>[[*elr_subtitle]]</h3>
                     <p>[[*introtext]]</p>
                     [[+elrTemplateName:is=`partner`:then=`
