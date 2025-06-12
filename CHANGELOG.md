@@ -7,7 +7,7 @@
 - FIX `heading` font resizing on cards now for all headings (fix for RTE inserted heading without proper class)
 - FIX removed `card` media background (option to readd on `grid` -> not implemented in front end; manual dev implementation for team grid possible)
 - ADD persistent (`always`) colors to all specific color CSS variables
-- ADD new transparent look to `card`, `accordion` and `cta` (with option to specify on parent layout block and reoverride on specific block)
+- ADD new transparent look to `card`, `accordion` and `cta` (with option to specify using global modifier higher up in the DOM and then reoverride on the specific block)
 - ADD `meta__info-start` and `meta__info-end` classes for more general meta head left/right alignment (author info, date, linkedin, contact button)
 
 0.0.7-pl [2025-06-08]
