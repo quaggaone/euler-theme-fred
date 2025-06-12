@@ -131,14 +131,18 @@ properties: 'a:0:{}'
                         </div>
                     `]]
                     <div class="elr-meta__info">
-                        [[*elr_meta_associatedperson:notempty=`
-                            <a href="[[~[[*elr_meta_associatedperson]]]]" class="elr-meta__author">
-                                <img src="[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`elr_team_image`]]" alt="">
-                                <span>[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`longtitle`]]</span>
-                            </a>
-                        `]]
-                        <div class="elr-meta__published">
-                            <span>[[*publishedon:date=`%d.%m.%Y`]]</span>
+                        <div class="elr-meta__info-start">
+                            [[*elr_meta_associatedperson:notempty=`
+                                <a href="[[~[[*elr_meta_associatedperson]]]]" class="elr-meta__author">
+                                    <img src="[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`elr_team_image`]]" alt="">
+                                    <span>[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`longtitle`]]</span>
+                                </a>
+                            `]]
+                        </div>
+                        <div class="elr-meta__info-end">
+                            <div class="elr-meta__published">
+                                <span>[[*publishedon:date=`%d.%m.%Y`]]</span>
+                            </div>
                         </div>
                     </div>
                 </div>
