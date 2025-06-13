@@ -1,3 +1,7 @@
+0.0.9-pl []
+---
+- FIX change rfs implementation on card fonts for upper resizing limit (non-fluid rfs value)
+
 0.0.8-pl [2025-06-13]
 ---
 - ADD global `elr-subtitle` mixin
