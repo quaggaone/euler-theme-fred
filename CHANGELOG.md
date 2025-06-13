@@ -1,4 +1,4 @@
-0.0.9-pl []
+0.0.9-pl [2025-06-13]
 ---
 - FIX change rfs implementation on card fonts for upper resizing limit (non-fluid rfs value)
 
