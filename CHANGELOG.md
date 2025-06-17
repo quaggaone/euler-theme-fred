@@ -1,3 +1,7 @@
+0.0.10-pl []
+---
+- ADD RSS Feed chunk for easy implementation
+
 0.0.9-pl [2025-06-13]
 ---
 - FIX change rfs implementation on card fonts for upper resizing limit (non-fluid rfs value)

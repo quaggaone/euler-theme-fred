@@ -1,0 +1,30 @@
+id: 22
+source: 1
+name: elr_rssfeed
+description: 'snippet call for the rss feed'
+category: 'euler Theme'
+properties: 'a:0:{}'
+
+-----
+
+[[!pdoResources?
+    &parents=`[[+parents]]`
+    &depth=`1`
+    &limit=`[[+limit]]`
+    &sortby=`publishedon`
+    &sortdir=`DESC`
+    &includeTVs=`elr_og_image,elr_og_image_alt,elr_subtitle,elr_meta_associatedperson`
+    &tplWrapper=`@INLINE <?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+    <title>[[*pagetitle]]</title>
+    <description>[[*description]]</description>
+    <link>[[~[[+parents]]? &scheme=`https`]]</link>
+    <copyright>(c) [[++site_name]]</copyright>
+    
+    [[+output]]
+
+</channel>
+</rss>`
+    &tpl=`elr_tpl_rssfeed_item`
+]]

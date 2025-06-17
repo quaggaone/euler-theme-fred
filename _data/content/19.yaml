@@ -1,0 +1,18 @@
+id: 19
+pagetitle: 'RSS Feed'
+alias: rss-feed
+published: 1
+introtext: ''
+menuindex: 7
+createdby: 1
+createdon: 1750170170
+publishedon: 1750170618
+publishedby: 1
+content_type: 2
+uri: ''
+properties: null
+tvs: {  }
+
+-----
+
+[[$elr_rssfeed?parents=`8`]]

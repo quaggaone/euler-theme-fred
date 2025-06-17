@@ -1,0 +1,30 @@
+id: 23
+source: 1
+name: elr_tpl_rssfeed_item
+description: ''
+category: 'euler Theme'
+properties: 'a:0:{}'
+
+-----
+
+<item>
+    <title>[[+longtitle]]</title>
+    <description><![CDATA[
+        <h2>[[+tv.elr_subtitle]]</h2>
+        <figure>
+            <img src="https://[[++http_host]][[pthumb? &input=`[[+tv.elr_og_image]]` &options=`w=1920&h=1080&zc=c&f=jpg`]]" alt="[[+tv.elr_og_image_alt]]">
+        </figure>
+        <p>
+            [[+introtext]]
+        </p>
+        <p>
+            Hier den <a href="[[~[[+id]]? &scheme=`https`]]">vollen Artikel lesen</a>.
+        </p>
+    ]]></description>
+    [[+tv.elr_meta_associatedperson
+        :notempty=`<author>[[pdoField?&id=`[[+tv.elr_meta_associatedperson]]`&field=`longtitle`]]</author>`
+    ]]
+    <link>[[~[[+id]]? &scheme=`https`]]</link>
+    <guid isPermaLink="false">[[++http_host]]/index.php?id=[[+id]]</guid>
+    <pubDate>[[+publishedon:date=`%a, %d %b %Y %H:%M:%S %Z`]]</pubDate>
+</item>
