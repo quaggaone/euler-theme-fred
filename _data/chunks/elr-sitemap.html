@@ -1,0 +1,19 @@
+id: 24
+source: 1
+name: elr_sitemap
+description: ''
+category: 'euler Theme'
+properties: 'a:0:{}'
+
+-----
+
+[[!pdoSitemap?
+    &context=`web`
+    &resources=`-[[*id]],-[[++site_unavailable_page]],-[[++fred.theme.euler.id_info]]`
+    &parents=`-[[++fred.theme.euler.id_feeds]]`
+    &depth=`0`
+    &sortby=`parent`
+    &showHidden=`1`
+    &scheme=`https`
+    &tpl=`@INLINE <url><loc>[[+url]]</loc><lastmod>[[+date]]</lastmod></url>`
+]]

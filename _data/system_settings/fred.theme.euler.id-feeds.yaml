@@ -1,0 +1,4 @@
+key: fred.theme.euler.id_feeds
+value: '20'
+xtype: numberfield
+namespace: fred_theme_euler
