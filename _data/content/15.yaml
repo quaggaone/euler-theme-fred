@@ -10,7 +10,7 @@ createdby: 1
 createdon: 1742749458
 publishedon: 1742749464
 publishedby: 1
-uri: ''
+uri: team/
 properties: '{"contentblocks":{"_isContentBlocks":false},"fred":{"data":{"content":[{"widget":"3af4b450-318a-4848-8d0d-9e8145a2e37a","values":[],"pluginsData":[],"settings":{"length":0,"modifier":"elr-grid__container--row-cols-3","parentPage":{"url":"\/euler\/index.php?id=15","id":"15"},"templateBlog":false,"templateBook":false,"templatePartner":false,"templateValuecard":false,"actionarea":"","filterOperator":"||","valueadd":"","sectionSpacer":"","aspectRatio":"","objectFit":""},"children":[],"elId":"fred_d4990c9_wne7fov8nf"}],"fingerprint":"71b24ec58c7e014181ddfa751220f3c98c4201f2"},"plugins":[]}}'
 tvs:
     elr_header_modifier: ''

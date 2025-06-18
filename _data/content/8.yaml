@@ -11,8 +11,8 @@ createdby: 1
 createdon: 1742520500
 publishedon: 1742520540
 publishedby: 1
-uri: ''
-properties: '{"contentblocks":{"_isContentBlocks":false},"fred":{"data":{"fingerprint":"b6589fc6ab0dc82cf12099d1c2d40ab994e8410c"}}}'
+uri: zine-container/
+properties: '{"contentblocks":{"_isContentBlocks":false},"fred":{"data":{"fingerprint":"d908cbab1f3a5853a07b1cb472ce96d96578ee23"}}}'
 tvs:
     elr_header_modifier: ''
     elr_og_image: ''

@@ -10,7 +10,7 @@ createdby: 1
 createdon: 1742520473
 publishedon: 1742520540
 publishedby: 1
-uri: ''
+uri: aktionsfeld/
 properties: '{"contentblocks":{"_isContentBlocks":false},"fred":{"data":{"content":[{"widget":"583c4f09-9424-44dc-9b6e-9e7952c21050","values":[],"pluginsData":[],"settings":{"colorModifier":"","modifier":" "},"children":{"content":[{"widget":"0150e372-801c-4994-8e69-9e7a30c2c66d","values":{"content":{"_raw":{"_value":"\n            Insert text here...\n        "}}},"pluginsData":[],"settings":[],"children":[],"elId":"fred_fedb5c3_qwvea9obnvi"}]},"elId":"fred_f1d964f_30bgaxiktb2"}],"fingerprint":"b6589fc6ab0dc82cf12099d1c2d40ab994e8410c"},"plugins":[]}}'
 tvs:
     elr_header_modifier: ''
