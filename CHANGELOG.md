@@ -1,4 +1,4 @@
-0.0.10-pl []
+0.0.10-pl [2025-06-18]
 ---
 - ADD RSS Feed chunk for easy implementation
 - ADD sitemap chunk for easy implementation
