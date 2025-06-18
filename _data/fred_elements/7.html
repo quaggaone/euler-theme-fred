@@ -4,13 +4,20 @@ uuid: ab2543dc-38f9-4b6e-8f23-9e7a32c1ba93
 image: 'https://placehold.co/300x150?text=Image'
 category: 2
 rank: 2
-options_override: '{"settings":[{"name":"modifier","label":"Modifier","type":"select","options":{" ":"Default","elr-figure--start":"Align Start","elr-figure--end":"Align End"},"value":" "},{"name":"mediaUrl","label":"URL","type":"image","mediaSource":"Images","value":"[[++fred.theme.euler.theme_dir]]brand\/open-graph.png"},{"name":"mediaAlt","label":"Description for Screen Readers <br> (This is what you can factually see on the image)","type":"text","value":""},{"name":"caption","label":"Caption <br> (Text accompanying the image)","type":"textarea","value":""}]}'
+options_override: '{"remote":true,"settings":[{"name":"modifier","label":"Modifier","type":"select","options":{" ":"Default","elr-figure--start":"Align Start","elr-figure--end":"Align End"},"value":" "},{"name":"mediaUrl","label":"URL","type":"image","mediaSource":"Images","value":"[[++fred.theme.euler.theme_dir]]brand\/open-graph.png"},{"name":"mediaAlt","label":"Description for Screen Readers <br> (This is what you can factually see on the image)","type":"text","value":""},{"name":"caption","label":"Caption <br> (Text accompanying the image)","type":"textarea","value":""}]}'
 
 -----
 
 <div class="elr-figure {{ modifier }}">
     <figure class="elr-figure__container">
-        <img src="{{ mediaUrl }}" alt="{{ mediaAlt }}">
+        [[pthumb? &input=`{{ mediaUrl }}` &options=`w=100&f=webp` &toPlaceholder=`img-100`]]
+        [[pthumb? &input=`{{ mediaUrl }}` &options=`w=300&f=webp` &toPlaceholder=`img-300`]]
+        [[pthumb? &input=`{{ mediaUrl }}` &options=`w=500&f=webp` &toPlaceholder=`img-500`]]
+        [[pthumb? &input=`{{ mediaUrl }}` &options=`w=750&f=webp` &toPlaceholder=`img-750`]]
+        [[pthumb? &input=`{{ mediaUrl }}` &options=`w=1000&f=webp` &toPlaceholder=`img-1000`]]
+        [[pthumb? &input=`{{ mediaUrl }}` &options=`w=1500&f=webp` &toPlaceholder=`img-1500`]]
+        [[pthumb? &input=`{{ mediaUrl }}` &options=`w=2500&f=webp` &toPlaceholder=`img-2500`]]
+        <img srcset="[[+img-100]] [[+img-100.width]]w, [[+img-300]] [[+img-300.width]]w, [[+img-500]] [[+img-500.width]]w, [[+img-750]] [[+img-750.width]]w, [[+img-1000]] [[+img-1000.width]]w, [[+img-1500]] [[+img-1500.width]]w, [[+img-2500]] [[+img-2500.width]]w" sizes="(min-width: 1400px) 1320px, 100vw" src="{{ mediaUrl }}" alt="{{ mediaAlt }}">
         <figcaption class="elr-figure__caption">
             {{ caption }}
         </figcaption>

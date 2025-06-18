@@ -11,8 +11,23 @@ properties: 'a:0:{}'
     <nav class="elr-navbar">
         <div class="elr-navbar__container">
             <a href="[[~[[++site_start]]]]" class="elr-navbar__brand">
-                <img class="elr-navbar__logo elr-navbar__logo--black-text" src="[[++fred.theme.euler.logo_inline_black]]" alt="logo">
-                <img class="elr-navbar__logo elr-navbar__logo--white-text" src="[[++fred.theme.euler.logo_inline_white]]" alt="logo">
+                [[pthumb? &input=`[[++fred.theme.euler.logo_inline_black]]` &options=`w=100&f=webp` &toPlaceholder=`img-logo-black-100`]]
+                [[pthumb? &input=`[[++fred.theme.euler.logo_inline_black]]` &options=`w=300&f=webp` &toPlaceholder=`img-logo-black-300`]]
+                [[pthumb? &input=`[[++fred.theme.euler.logo_inline_black]]` &options=`w=500&f=webp` &toPlaceholder=`img-logo-black-500`]]
+                [[pthumb? &input=`[[++fred.theme.euler.logo_inline_black]]` &options=`w=750&f=webp` &toPlaceholder=`img-logo-black-750`]]
+                [[pthumb? &input=`[[++fred.theme.euler.logo_inline_black]]` &options=`w=1000&f=webp` &toPlaceholder=`img-logo-black-1000`]]
+                [[pthumb? &input=`[[++fred.theme.euler.logo_inline_black]]` &options=`w=1500&f=webp` &toPlaceholder=`img-logo-black-1500`]]
+                [[pthumb? &input=`[[++fred.theme.euler.logo_inline_black]]` &options=`w=2500&f=webp` &toPlaceholder=`img-logo-black-2500`]]
+                <img srcset="[[+img-logo-black-100]] [[+img-logo-black-100.width]]w, [[+img-logo-black-300]] [[+img-logo-black-300.width]]w, [[+img-logo-black-500]] [[+img-logo-black-500.width]]w, [[+img-logo-black-750]] [[+img-logo-black-750.width]]w, [[+img-logo-black-1000]] [[+img-logo-black-1000.width]]w, [[+img-logo-black-1500]] [[+img-logo-black-1500.width]]w, [[+img-logo-black-2500]] [[+img-logo-black-2500.width]]w" sizes="40vw" class="elr-navbar__logo elr-navbar__logo--black-text" src="[[++fred.theme.euler.logo_inline_black]]" alt="logo">
+                    
+                [[pthumb? &input=`[[++fred.theme.euler.logo_inline_white]]` &options=`w=100&f=webp` &toPlaceholder=`img-logo-white-100`]]
+                [[pthumb? &input=`[[++fred.theme.euler.logo_inline_white]]` &options=`w=300&f=webp` &toPlaceholder=`img-logo-white-300`]]
+                [[pthumb? &input=`[[++fred.theme.euler.logo_inline_white]]` &options=`w=500&f=webp` &toPlaceholder=`img-logo-white-500`]]
+                [[pthumb? &input=`[[++fred.theme.euler.logo_inline_white]]` &options=`w=750&f=webp` &toPlaceholder=`img-logo-white-750`]]
+                [[pthumb? &input=`[[++fred.theme.euler.logo_inline_white]]` &options=`w=1000&f=webp` &toPlaceholder=`img-logo-white-1000`]]
+                [[pthumb? &input=`[[++fred.theme.euler.logo_inline_white]]` &options=`w=1500&f=webp` &toPlaceholder=`img-logo-white-1500`]]
+                [[pthumb? &input=`[[++fred.theme.euler.logo_inline_white]]` &options=`w=2500&f=webp` &toPlaceholder=`img-logo-white-2500`]]
+                <img srcset="[[+img-logo-white-100]] [[+img-logo-white-100.width]]w, [[+img-logo-white-300]] [[+img-logo-white-300.width]]w, [[+[[*elr_og_image]]-500]] [[+img-logo-white-500.width]]w, [[+img-logo-white-750]] [[+img-logo-white-750.width]]w, [[+img-logo-white-1000]] [[+img-logo-white-1000.width]]w, [[+img-logo-white-1500]] [[+img-logo-white-1500.width]]w, [[+img-logo-white-2500]] [[+img-logo-white-2500.width]]w" sizes="40vw" class="elr-navbar__logo elr-navbar__logo--white-text" src="[[++fred.theme.euler.logo_inline_white]]" alt="logo">
             </a>
             <button class="elr-navbar__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#elr-navbar__collapse" aria-controls="elr-navbar__collapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,7 +51,7 @@ properties: 'a:0:{}'
             </div>
         </div>
     </nav>
-    <div class="elr-hero">    
+    <div class="elr-[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`elr_team_image`]]">    
         <div class="elr-hero__container">
             <div class="elr-hero__col elr-hero__col--content">
                 [[+elrTemplateType:is=`blog`:then=`
@@ -65,7 +80,14 @@ properties: 'a:0:{}'
                 `]]
             </div>
             <div class="elr-hero__col elr-hero__col--media">
-                <img src="[[++base_url]][[*elr_og_image]]" alt="[[*elr_og_image_alt]]">
+                [[pthumb? &input=`[[*elr_og_image]]` &options=`w=100&f=webp` &toPlaceholder=`img-hero-media-100`]]
+                [[pthumb? &input=`[[*elr_og_image]]` &options=`w=300&f=webp` &toPlaceholder=`img-hero-media-300`]]
+                [[pthumb? &input=`[[*elr_og_image]]` &options=`w=500&f=webp` &toPlaceholder=`img-hero-media-500`]]
+                [[pthumb? &input=`[[*elr_og_image]]` &options=`w=750&f=webp` &toPlaceholder=`img-hero-media-750`]]
+                [[pthumb? &input=`[[*elr_og_image]]` &options=`w=1000&f=webp` &toPlaceholder=`img-hero-media-1000`]]
+                [[pthumb? &input=`[[*elr_og_image]]` &options=`w=1500&f=webp` &toPlaceholder=`img-hero-media-1500`]]
+                [[pthumb? &input=`[[*elr_og_image]]` &options=`w=2500&f=webp` &toPlaceholder=`img-hero-media-2500`]]
+                <img srcset="[[+img-hero-media-100]] [[+img-hero-media-100.width]]w, [[+img-hero-media-300]] [[+img-hero-media-300.width]]w, [[+img-hero-media-500]] [[+img-hero-media-500.width]]w, [[+img-hero-media-750]] [[+img-hero-media-750.width]]w, [[+img-hero-media-1000]] [[+img-hero-media-1000.width]]w, [[+img-hero-media-1500]] [[+img-hero-media-1500.width]]w, [[+img-hero-media-2500]] [[+img-hero-media-2500.width]]w" sizes="130vw" src="[[++base_url]][[*elr_og_image]]" alt="[[*elr_og_image_alt]]">
             </div>
         </div>
     </div>
@@ -94,7 +116,36 @@ properties: 'a:0:{}'
             <div class="elr-meta__container">
                 <div class="elr-meta__col elr-meta__col--side-start">
                     <div class="elr-meta__media">
-                        <img src="[[++base_url]][[+elrTemplateName:is=`book`:then=`[[*elr_meta_book_cover]]`]][[+elrTemplateName:is=`partner`:then=`[[*elr_meta_logo]]`]][[+elrTemplateName:is=`teammember`:then=`[[*elr_team_image]]`]]" alt="">
+                        [[pthumb? &input=`[[+elrTemplateName
+                                    :select=`&teammember=[[*elr_team_image]]&book=[[*elr_meta_book_cover]]&partner=[[*elr_meta_logo]]`
+                                ]]` &options=`w=100&f=webp` &toPlaceholder=`img-meta-media-100`]]
+                        [[pthumb? &input=`[[+elrTemplateName
+                                    :select=`&teammember=[[*elr_team_image]]&book=[[*elr_meta_book_cover]]&partner=[[*elr_meta_logo]]`
+                                ]]` &options=`w=300&f=webp` &toPlaceholder=`img-meta-media-300`]]
+                        [[pthumb? &input=`[[+elrTemplateName
+                                    :select=`&teammember=[[*elr_team_image]]&book=[[*elr_meta_book_cover]]&partner=[[*elr_meta_logo]]`
+                                ]]` &options=`w=500&f=webp` &toPlaceholder=`img-meta-media-500`]]
+                        [[pthumb? &input=`[[+elrTemplateName
+                                    :select=`&teammember=[[*elr_team_image]]&book=[[*elr_meta_book_cover]]&partner=[[*elr_meta_logo]]`
+                                ]]` &options=`w=750&f=webp` &toPlaceholder=`img-meta-media-750`]]
+                        [[pthumb? &input=`[[+elrTemplateName
+                                    :select=`&teammember=[[*elr_team_image]]&book=[[*elr_meta_book_cover]]&partner=[[*elr_meta_logo]]`
+                                ]]` &options=`w=1000&f=webp` &toPlaceholder=`img-meta-media-1000`]]
+                        [[pthumb? &input=`[[+elrTemplateName
+                                    :select=`&teammember=[[*elr_team_image]]&book=[[*elr_meta_book_cover]]&partner=[[*elr_meta_logo]]`
+                                ]]` &options=`w=1500&f=webp` &toPlaceholder=`img-meta-media-1500`]]
+                        [[pthumb? &input=`[[+elrTemplateName
+                                    :select=`&teammember=[[*elr_team_image]]&book=[[*elr_meta_book_cover]]&partner=[[*elr_meta_logo]]`
+                                ]]` &options=`w=2500&f=webp` &toPlaceholder=`img-meta-media-2500`]]
+                        [[+elrTemplateName
+                            :is=`blog`
+                            :then=``
+                            :else=`
+                                <img srcset="[[+img-meta-media-100]] [[+img-meta-media-100.width]]w, [[+img-meta-media-300]] [[+img-meta-media-300.width]]w, [[+img-meta-media-500]] [[+img-meta-media-500.width]]w, [[+img-meta-media-750]] [[+img-meta-media-750.width]]w, [[+img-meta-media-1000]] [[+img-meta-media-1000.width]]w, [[+img-meta-media-1500]] [[+img-meta-media-1500.width]]w, [[+img-meta-media-2500]] [[+img-meta-media-2500.width]]w" sizes="(min-width: 992px) 25vw, 50vw" src="[[++base_url]][[+elrTemplateName
+                                    :select=`&teammember=[[*elr_team_image]]&book=[[*elr_meta_book_cover]]&partner=[[*elr_meta_logo]]`
+                                ]]" alt="[[*pagetitle]]">
+                            `
+                        ]]
                     </div>
                 </div>
                 <div class="elr-meta__col elr-meta__col--main">
@@ -134,7 +185,14 @@ properties: 'a:0:{}'
                         <div class="elr-meta__info-start">
                             [[*elr_meta_associatedperson:notempty=`
                                 <a href="[[~[[*elr_meta_associatedperson]]]]" class="elr-meta__author">
-                                    <img src="[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`elr_team_image`]]" alt="">
+                                    [[pthumb? &input=`[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`elr_team_image`]]` &options=`w=100&f=webp` &toPlaceholder=`img-associatedperson-100`]]
+                                    [[pthumb? &input=`[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`elr_team_image`]]` &options=`w=300&f=webp` &toPlaceholder=`img-associatedperson-300`]]
+                                    [[pthumb? &input=`[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`elr_team_image`]]` &options=`w=500&f=webp` &toPlaceholder=`img-associatedperson-500`]]
+                                    [[pthumb? &input=`[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`elr_team_image`]]` &options=`w=750&f=webp` &toPlaceholder=`img-associatedperson-750`]]
+                                    [[pthumb? &input=`[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`elr_team_image`]]` &options=`w=1000&f=webp` &toPlaceholder=`img-associatedperson-1000`]]
+                                    [[pthumb? &input=`[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`elr_team_image`]]` &options=`w=1500&f=webp` &toPlaceholder=`img-associatedperson-1500`]]
+                                    [[pthumb? &input=`[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`elr_team_image`]]` &options=`w=2500&f=webp` &toPlaceholder=`img-associatedperson-2500`]]
+                                    <img srcset="[[+img-associatedperson-100]] [[+img-associatedperson-100.width]]w, [[+img-associatedperson-300]] [[+img-associatedperson-300.width]]w, [[+img-associatedperson-500]] [[+img-associatedperson-500.width]]w, [[+img-associatedperson-750]] [[+img-associatedperson-750.width]]w, [[+img-associatedperson-1000]] [[+img-associatedperson-1000.width]]w, [[+img-associatedperson-1500]] [[+img-associatedperson-1500.width]]w, [[+img-associatedperson-2500]] [[+img-associatedperson-2500.width]]w" sizes="3.5rem" src="[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`elr_team_image`]]" alt="[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`longtitle`]]">
                                     <span>[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`longtitle`]]</span>
                                 </a>
                             `]]

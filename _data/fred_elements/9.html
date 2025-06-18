@@ -4,7 +4,7 @@ uuid: 482901ae-db83-4246-855e-9e7a3fa6f52d
 image: 'https://placehold.co/300x150?text=Call-to-Action'
 category: 3
 rank: 2
-options_override: '{"settings":[{"fred-import":"colorModifier"},{"name":"modifier","label":"Modifier","type":"select","options":{"":"Inherit","elr-cta--default":"Default","elr-cta--transparent":"Transparent"},"value":" "},{"name":"mediaUrl","label":"Media URL","type":"image","value":"[[++fred.theme.euler.theme_dir]]brand\/open-graph.png"},{"name":"mediaAlt","label":"Media Description for Screen Readers <br> (This is what you can factually see on the image)","type":"text","value":""},{"name":"linkPage","label":"Linked Page","type":"page"},{"fred-import":"sectionSpacer"},{"fred-import":"aspectRatio"},{"fred-import":"objectFit"}]}'
+options_override: '{"remote":true,"settings":[{"fred-import":"colorModifier"},{"name":"modifier","label":"Modifier","type":"select","options":{"":"Inherit","elr-cta--default":"Default","elr-cta--transparent":"Transparent"},"value":" "},{"name":"mediaUrl","label":"Media URL","type":"image","value":"[[++fred.theme.euler.theme_dir]]brand\/open-graph.png"},{"name":"mediaAlt","label":"Media Description for Screen Readers <br> (This is what you can factually see on the image)","type":"text","value":""},{"name":"linkPage","label":"Linked Page","type":"page"},{"fred-import":"sectionSpacer"},{"fred-import":"aspectRatio"},{"fred-import":"objectFit"}]}'
 
 -----
 
@@ -19,7 +19,14 @@ options_override: '{"settings":[{"fred-import":"colorModifier"},{"name":"modifie
             </div>
         </div>
         <div class="elr-cta__col elr-cta__col--media">
-            <img src="{{ mediaUrl }}" alt="{{ mediaAlt }}">
+            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=100&f=webp` &toPlaceholder=`img-100`]]
+            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=300&f=webp` &toPlaceholder=`img-300`]]
+            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=500&f=webp` &toPlaceholder=`img-500`]]
+            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=750&f=webp` &toPlaceholder=`img-750`]]
+            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=1000&f=webp` &toPlaceholder=`img-1000`]]
+            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=1500&f=webp` &toPlaceholder=`img-1500`]]
+            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=2500&f=webp` &toPlaceholder=`img-2500`]]
+            <img srcset="[[+img-100]] [[+img-100.width]]w, [[+img-300]] [[+img-300.width]]w, [[+img-500]] [[+img-500.width]]w, [[+img-750]] [[+img-750.width]]w, [[+img-1000]] [[+img-1000.width]]w, [[+img-1500]] [[+img-1500.width]]w, [[+img-2500]] [[+img-2500.width]]w" sizes="(min-width: 1400px) 1320px, 100vw" src="{{ mediaUrl }}" alt="{{ mediaAlt }}">
         </div>
     </div>
 </section>
