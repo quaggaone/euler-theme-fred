@@ -4,6 +4,7 @@
 - ADD sitemap chunk for easy implementation
   (`site_unavailable_page` sytem setting must not equal 0; other euler system setting IDs must also be set)
 - ADD responsive image sizing (not for `display list`)
+- ADD FRED element for contact forms
 
 0.0.9-pl [2025-06-13]
 ---
