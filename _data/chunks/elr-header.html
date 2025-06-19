@@ -19,7 +19,7 @@ properties: 'a:0:{}'
                 [[pthumb? &input=`[[++fred.theme.euler.logo_inline_black]]` &options=`w=1500&f=webp` &toPlaceholder=`img-logo-black-1500`]]
                 [[pthumb? &input=`[[++fred.theme.euler.logo_inline_black]]` &options=`w=2500&f=webp` &toPlaceholder=`img-logo-black-2500`]]
                 <img srcset="[[+img-logo-black-100]] [[+img-logo-black-100.width]]w, [[+img-logo-black-300]] [[+img-logo-black-300.width]]w, [[+img-logo-black-500]] [[+img-logo-black-500.width]]w, [[+img-logo-black-750]] [[+img-logo-black-750.width]]w, [[+img-logo-black-1000]] [[+img-logo-black-1000.width]]w, [[+img-logo-black-1500]] [[+img-logo-black-1500.width]]w, [[+img-logo-black-2500]] [[+img-logo-black-2500.width]]w" sizes="40vw" class="elr-navbar__logo elr-navbar__logo--black-text" src="[[++fred.theme.euler.logo_inline_black]]" alt="logo">
-                    
+
                 [[pthumb? &input=`[[++fred.theme.euler.logo_inline_white]]` &options=`w=100&f=webp` &toPlaceholder=`img-logo-white-100`]]
                 [[pthumb? &input=`[[++fred.theme.euler.logo_inline_white]]` &options=`w=300&f=webp` &toPlaceholder=`img-logo-white-300`]]
                 [[pthumb? &input=`[[++fred.theme.euler.logo_inline_white]]` &options=`w=500&f=webp` &toPlaceholder=`img-logo-white-500`]]
@@ -51,7 +51,7 @@ properties: 'a:0:{}'
             </div>
         </div>
     </nav>
-    <div class="elr-[[pdoField?&id=`[[*elr_meta_associatedperson]]`&field=`elr_team_image`]]">    
+    <div class="elr-hero">
         <div class="elr-hero__container">
             <div class="elr-hero__col elr-hero__col--content">
                 [[+elrTemplateType:is=`blog`:then=`
@@ -139,6 +139,7 @@ properties: 'a:0:{}'
                                 ]]` &options=`w=2500&f=webp` &toPlaceholder=`img-meta-media-2500`]]
                         [[+elrTemplateName
                             :is=`blog`
+                            :or:is=`valuecard`
                             :then=``
                             :else=`
                                 <img srcset="[[+img-meta-media-100]] [[+img-meta-media-100.width]]w, [[+img-meta-media-300]] [[+img-meta-media-300.width]]w, [[+img-meta-media-500]] [[+img-meta-media-500.width]]w, [[+img-meta-media-750]] [[+img-meta-media-750.width]]w, [[+img-meta-media-1000]] [[+img-meta-media-1000.width]]w, [[+img-meta-media-1500]] [[+img-meta-media-1500.width]]w, [[+img-meta-media-2500]] [[+img-meta-media-2500.width]]w" sizes="(min-width: 992px) 25vw, 50vw" src="[[++base_url]][[+elrTemplateName
