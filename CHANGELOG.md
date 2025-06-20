@@ -1,3 +1,7 @@
+0.0.12-pl []
+---
+- FIX display logo not `og_image` on partner pages
+
 0.0.11-pl [2025-06-20]
 ---
 - RENAME `elrGetTemplatePorperty` to `elrGetTemplateProperty` (notice the 'P***ro***perty') -> rename this before upgrade to be sure
