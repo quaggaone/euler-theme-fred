@@ -17,10 +17,10 @@ properties: 'a:0:{}'
     &tplWrapper=`@INLINE <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-    <title>[[*pagetitle]]</title>
-    <description>[[*description]]</description>
+    <title>[[*pagetitle:htmlentities]]</title>
+    <description>[[*description:htmlentities]]</description>
     <link>[[~[[+parents]]? &scheme=`https`]]</link>
-    <copyright>(c) [[++site_name]]</copyright>
+    <copyright>(c) [[++site_name:htmlentities]]</copyright>
     
     [[+output]]
 

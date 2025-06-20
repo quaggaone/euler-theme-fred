@@ -3,6 +3,7 @@
 - FIX display logo not `og_image` on partner pages
 - FIX sitemap generation behaviour (ignore `site_unavailable_page` value if `0`)
 - FIX turn off sitemap cache
+- FIX RSS Feed encoding (special characters need to be HTML encoded)
 
 0.0.11-pl [2025-06-20]
 ---
