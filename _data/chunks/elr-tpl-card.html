@@ -10,64 +10,23 @@ properties: 'a:0:{}'
 <div class="elr-card elr-card--link [[+tv.elr_theme_color]]">
     <a class="elr-card__container" href="[[~[[+id]]]]">
         <div class="elr-card__media">
-            [[pthumb? &input=`[[elrGetTemplateProperty
-                    :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
-                    :isempty=`[[+tv.elr_og_image]]`
-                    ?
-                    &id=`[[+id]]`
-                    &property=`elrTemplateName`
-                ]]` &options=`w=100&f=webp` &toPlaceholder=`img-100`]]
-            [[pthumb? &input=`[[elrGetTemplateProperty
-                    :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
-                    :isempty=`[[+tv.elr_og_image]]`
-                    ?
-                    &id=`[[+id]]`
-                    &property=`elrTemplateName`
-                ]]` &options=`w=300&f=webp` &toPlaceholder=`img-300`]]
-            [[pthumb? &input=`[[elrGetTemplateProperty
-                    :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
-                    :isempty=`[[+tv.elr_og_image]]`
-                    ?
-                    &id=`[[+id]]`
-                    &property=`elrTemplateName`
-                ]]` &options=`w=500&f=webp` &toPlaceholder=`img-500`]]
-            [[pthumb? &input=`[[elrGetTemplateProperty
-                    :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
-                    :isempty=`[[+tv.elr_og_image]]`
-                    ?
-                    &id=`[[+id]]`
-                    &property=`elrTemplateName`
-                ]]` &options=`w=750&f=webp` &toPlaceholder=`img-750`]]
-            [[pthumb? &input=`[[elrGetTemplateProperty
-                    :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
-                    :isempty=`[[+tv.elr_og_image]]`
-                    ?
-                    &id=`[[+id]]`
-                    &property=`elrTemplateName`
-                ]]` &options=`w=1000&f=webp` &toPlaceholder=`img-1000`]]
-            [[pthumb? &input=`[[elrGetTemplateProperty
-                    :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
-                    :isempty=`[[+tv.elr_og_image]]`
-                    ?
-                    &id=`[[+id]]`
-                    &property=`elrTemplateName`
-                ]]` &options=`w=1500&f=webp` &toPlaceholder=`img-1500`]]
-            [[pthumb? &input=`[[elrGetTemplateProperty
-                    :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
-                    :isempty=`[[+tv.elr_og_image]]`
-                    ?
-                    &id=`[[+id]]`
-                    &property=`elrTemplateName`
-                ]]` &options=`w=2500&f=webp` &toPlaceholder=`img-2500`]]
-            <img srcset="[[+img-100]] [[+img-100.width]]w, [[+img-300]] [[+img-300.width]]w, [[+img-500]] [[+img-500.width]]w, [[+img-750]] [[+img-750.width]]w, [[+img-1000]] [[+img-1000.width]]w, [[+img-1500]] [[+img-1500.width]]w, [[+img-2500]] [[+img-2500.width]]w"
+            [[pthumb? &input=`[[+tv.[[elrGetImageMain?id=`[[+id]]`]]]]` &options=`w=100&f=webp` &toPlaceholder=`img-100-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]]`]]
+            [[pthumb? &input=`[[+tv.[[elrGetImageMain?id=`[[+id]]`]]]]` &options=`w=300&f=webp` &toPlaceholder=`img-300-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]]`]]
+            [[pthumb? &input=`[[+tv.[[elrGetImageMain?id=`[[+id]]`]]]]` &options=`w=500&f=webp` &toPlaceholder=`img-500-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]]`]]
+            [[pthumb? &input=`[[+tv.[[elrGetImageMain?id=`[[+id]]`]]]]` &options=`w=750&f=webp` &toPlaceholder=`img-750-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]]`]]
+            [[pthumb? &input=`[[+tv.[[elrGetImageMain?id=`[[+id]]`]]]]` &options=`w=1000&f=webp` &toPlaceholder=`img-1000-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]]`]]
+            [[pthumb? &input=`[[+tv.[[elrGetImageMain?id=`[[+id]]`]]]]` &options=`w=1500&f=webp` &toPlaceholder=`img-1500-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]]`]]
+            [[pthumb? &input=`[[+tv.[[elrGetImageMain?id=`[[+id]]`]]]]` &options=`w=2500&f=webp` &toPlaceholder=`img-2500-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]]`]]
+            <img
+                srcset="[[+img-100-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]]]] [[+img-100-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]].width]]w,
+                    [[+img-300-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]]]] [[+img-300-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]].width]]w,
+                    [[+img-500-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]]]] [[+img-500-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]].width]]w,
+                    [[+img-750-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]]]] [[+img-750-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]].width]]w,
+                    [[+img-1000-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]]]] [[+img-1000-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]].width]]w,
+                    [[+img-1500-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]]]] [[+img-1500-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]].width]]w,
+                    [[+img-2500-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]]]] [[+img-2500-[[+tv.[[elrGetImageMain?id=`[[+id]]`]]:elrPathToId]].width]]w"
                 sizes="(min-width: 1400px) 1320px, 100vw"
-                src="[[elrGetTemplateProperty
-                    :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
-                    :isempty=`[[+tv.elr_og_image]]`
-                    ?
-                    &id=`[[+id]]`
-                    &property=`elrTemplateName`
-                ]]"
+                src="[[+tv.[[elrGetImageMain?id=`[[+id]]`]]]]"
                 alt="[[elrGetTemplateProperty
                     :select=`teammember=[[+pagetitle]]&book=[[+tv.pagetitle]]`
                     :isempty=`[[+tv.elr_og_image_alt]]`
@@ -85,14 +44,22 @@ properties: 'a:0:{}'
             >
             [[elrGetTemplateProperty
                 :is=`partner`
-                :then=`[[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=100&f=webp` &toPlaceholder=`img-100`]]
-                    [[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=300&f=webp` &toPlaceholder=`img-300`]]
-                    [[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=500&f=webp` &toPlaceholder=`img-500`]]
-                    [[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=750&f=webp` &toPlaceholder=`img-750`]]
-                    [[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=1000&f=webp` &toPlaceholder=`img-1000`]]
-                    [[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=1500&f=webp` &toPlaceholder=`img-1500`]]
-                    [[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=2500&f=webp` &toPlaceholder=`img-2500`]]
-                    <img srcset="[[+img-100]] [[+img-100.width]]w, [[+img-300]] [[+img-300.width]]w, [[+img-500]] [[+img-500.width]]w, [[+img-750]] [[+img-750.width]]w, [[+img-1000]] [[+img-1000.width]]w, [[+img-1500]] [[+img-1500.width]]w, [[+img-2500]] [[+img-2500.width]]w" sizes="(min-width: 1400px) 528px, 40vw" src="[[+tv.elr_meta_logo]]" alt="[[+pagetitle]] Logo" class="elr-card__logo">`
+                :then=`[[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=100&f=webp` &toPlaceholder=`img-100-[[+tv.elr_meta_logo:elrPathToId]]`]]
+                    [[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=300&f=webp` &toPlaceholder=`img-300-[[+tv.elr_meta_logo:elrPathToId]]`]]
+                    [[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=500&f=webp` &toPlaceholder=`img-500-[[+tv.elr_meta_logo:elrPathToId]]`]]
+                    [[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=750&f=webp` &toPlaceholder=`img-750-[[+tv.elr_meta_logo:elrPathToId]]`]]
+                    [[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=1000&f=webp` &toPlaceholder=`img-1000-[[+tv.elr_meta_logo:elrPathToId]]`]]
+                    [[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=1500&f=webp` &toPlaceholder=`img-1500-[[+tv.elr_meta_logo:elrPathToId]]`]]
+                    [[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=2500&f=webp` &toPlaceholder=`img-2500-[[+tv.elr_meta_logo:elrPathToId]]`]]
+                    <img
+                        srcset="[[+img-100-[[+tv.elr_meta_logo:elrPathToId]]]] [[+img-100-[[+tv.elr_meta_logo:elrPathToId]].width]]w,
+                            [[+img-300-[[+tv.elr_meta_logo:elrPathToId]]]] [[+img-300-[[+tv.elr_meta_logo:elrPathToId]].width]]w,
+                            [[+img-500-[[+tv.elr_meta_logo:elrPathToId]]]] [[+img-500-[[+tv.elr_meta_logo:elrPathToId]].width]]w,
+                            [[+img-750-[[+tv.elr_meta_logo:elrPathToId]]]] [[+img-750-[[+tv.elr_meta_logo:elrPathToId]].width]]w,
+                            [[+img-1000-[[+tv.elr_meta_logo:elrPathToId]]]] [[+img-1000-[[+tv.elr_meta_logo:elrPathToId]].width]]w,
+                            [[+img-1500-[[+tv.elr_meta_logo:elrPathToId]]]] [[+img-1500-[[+tv.elr_meta_logo:elrPathToId]].width]]w,
+                            [[+img-2500-[[+tv.elr_meta_logo:elrPathToId]]]] [[+img-2500-[[+tv.elr_meta_logo:elrPathToId]].width]]w"
+                        sizes="(min-width: 1400px) 528px, 40vw" src="[[+tv.elr_meta_logo]]" alt="[[+pagetitle]] Logo" class="elr-card__logo">`
                 :else=``
                 ?
                 &id=`[[+id]]`

@@ -1,6 +1,7 @@
 0.0.11-pl []
 ---
 - RENAME `elrGetTemplatePorperty` to `elrGetTemplateProperty` (notice the 'P***ro***perty') -> rename this before upgrade to be sure
+- ADD new PHP snippets for cleaner image resizing implementation
 
 0.0.10-pl [2025-06-18]
 ---
