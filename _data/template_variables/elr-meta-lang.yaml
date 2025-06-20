@@ -5,9 +5,9 @@ name: elr_meta_lang
 caption: Language
 category: 'euler Theme'
 elements: English||German
-display: default
+display: delim
 default_text: ''
 properties: 'a:0:{}'
 input_properties: 'a:3:{s:10:"allowBlank";s:4:"true";s:15:"displayAsSwitch";s:5:"false";s:7:"columns";s:1:"1";}'
-output_properties: 'a:1:{s:9:"delimiter";s:2:", ";}'
+output_properties: 'a:1:{s:9:"delimiter";s:1:",";}'
 content: ''

@@ -4,6 +4,7 @@
 - ADD new PHP snippets for cleaner image resizing implementation
 - FIX responsive image sizing (pthumb placeholders are only substituted all at the end and therefore need to be unique)
 - ADD RSS Feed advertising to `head` (works with all children of the feeds container)
+- FIX delimiters on the front end
 
 0.0.10-pl [2025-06-18]
 ---
