@@ -19,14 +19,22 @@ options_override: '{"remote":true,"settings":[{"fred-import":"colorModifier"},{"
             </div>
         </div>
         <div class="elr-cta__col elr-cta__col--media">
-            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=100&f=webp` &toPlaceholder=`img-100`]]
-            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=300&f=webp` &toPlaceholder=`img-300`]]
-            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=500&f=webp` &toPlaceholder=`img-500`]]
-            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=750&f=webp` &toPlaceholder=`img-750`]]
-            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=1000&f=webp` &toPlaceholder=`img-1000`]]
-            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=1500&f=webp` &toPlaceholder=`img-1500`]]
-            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=2500&f=webp` &toPlaceholder=`img-2500`]]
-            <img srcset="[[+img-100]] [[+img-100.width]]w, [[+img-300]] [[+img-300.width]]w, [[+img-500]] [[+img-500.width]]w, [[+img-750]] [[+img-750.width]]w, [[+img-1000]] [[+img-1000.width]]w, [[+img-1500]] [[+img-1500.width]]w, [[+img-2500]] [[+img-2500.width]]w" sizes="(min-width: 1400px) 1320px, 100vw" src="{{ mediaUrl }}" alt="{{ mediaAlt }}">
+            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=100&f=webp` &toPlaceholder=`img-100-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]]`]]
+            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=300&f=webp` &toPlaceholder=`img-300-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]]`]]
+            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=500&f=webp` &toPlaceholder=`img-500-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]]`]]
+            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=750&f=webp` &toPlaceholder=`img-750-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]]`]]
+            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=1000&f=webp` &toPlaceholder=`img-1000-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]]`]]
+            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=1500&f=webp` &toPlaceholder=`img-1500-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]]`]]
+            [[pthumb? &input=`{{ mediaUrl }}` &options=`w=2500&f=webp` &toPlaceholder=`img-2500-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]]`]]
+            <img
+                srcset="[[+img-100-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]]]] [[+img-100-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]].width]]w,
+                    [[+img-300-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]]]] [[+img-300-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]].width]]w,
+                    [[+img-500-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]]]] [[+img-500-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]].width]]w,
+                    [[+img-750-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]]]] [[+img-750-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]].width]]w,
+                    [[+img-1000-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]]]] [[+img-1000-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]].width]]w,
+                    [[+img-1500-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]]]] [[+img-1500-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]].width]]w,
+                    [[+img-2500-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]]]] [[+img-2500-[[+mediaUrl:default=`{{mediaUrl}}`:elrPathToId]].width]]w"
+                sizes="(min-width: 1400px) 1320px, 100vw" src="{{ mediaUrl }}" alt="{{ mediaAlt }}">
         </div>
     </div>
 </section>

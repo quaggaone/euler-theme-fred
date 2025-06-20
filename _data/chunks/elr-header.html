@@ -116,27 +116,13 @@ properties: 'a:0:{}'
             <div class="elr-meta__container">
                 <div class="elr-meta__col elr-meta__col--side-start">
                     <div class="elr-meta__media">
-                        [[pthumb? &input=`[[+elrTemplateName
-                                    :select=`&teammember=[[*elr_team_image]]&book=[[*elr_meta_book_cover]]&partner=[[*elr_meta_logo]]`
-                                ]]` &options=`w=100&f=webp` &toPlaceholder=`img-meta-media-100`]]
-                        [[pthumb? &input=`[[+elrTemplateName
-                                    :select=`&teammember=[[*elr_team_image]]&book=[[*elr_meta_book_cover]]&partner=[[*elr_meta_logo]]`
-                                ]]` &options=`w=300&f=webp` &toPlaceholder=`img-meta-media-300`]]
-                        [[pthumb? &input=`[[+elrTemplateName
-                                    :select=`&teammember=[[*elr_team_image]]&book=[[*elr_meta_book_cover]]&partner=[[*elr_meta_logo]]`
-                                ]]` &options=`w=500&f=webp` &toPlaceholder=`img-meta-media-500`]]
-                        [[pthumb? &input=`[[+elrTemplateName
-                                    :select=`&teammember=[[*elr_team_image]]&book=[[*elr_meta_book_cover]]&partner=[[*elr_meta_logo]]`
-                                ]]` &options=`w=750&f=webp` &toPlaceholder=`img-meta-media-750`]]
-                        [[pthumb? &input=`[[+elrTemplateName
-                                    :select=`&teammember=[[*elr_team_image]]&book=[[*elr_meta_book_cover]]&partner=[[*elr_meta_logo]]`
-                                ]]` &options=`w=1000&f=webp` &toPlaceholder=`img-meta-media-1000`]]
-                        [[pthumb? &input=`[[+elrTemplateName
-                                    :select=`&teammember=[[*elr_team_image]]&book=[[*elr_meta_book_cover]]&partner=[[*elr_meta_logo]]`
-                                ]]` &options=`w=1500&f=webp` &toPlaceholder=`img-meta-media-1500`]]
-                        [[pthumb? &input=`[[+elrTemplateName
-                                    :select=`&teammember=[[*elr_team_image]]&book=[[*elr_meta_book_cover]]&partner=[[*elr_meta_logo]]`
-                                ]]` &options=`w=2500&f=webp` &toPlaceholder=`img-meta-media-2500`]]
+                        [[pthumb? &input=`[[*[[elrGetImageMain]]]]` &options=`w=100&f=webp` &toPlaceholder=`img-meta-media-100`]]
+                        [[pthumb? &input=`[[*[[elrGetImageMain]]]]` &options=`w=300&f=webp` &toPlaceholder=`img-meta-media-300`]]
+                        [[pthumb? &input=`[[*[[elrGetImageMain]]]]` &options=`w=500&f=webp` &toPlaceholder=`img-meta-media-500`]]
+                        [[pthumb? &input=`[[*[[elrGetImageMain]]]]` &options=`w=750&f=webp` &toPlaceholder=`img-meta-media-750`]]
+                        [[pthumb? &input=`[[*[[elrGetImageMain]]]]` &options=`w=1000&f=webp` &toPlaceholder=`img-meta-media-1000`]]
+                        [[pthumb? &input=`[[*[[elrGetImageMain]]]]` &options=`w=1500&f=webp` &toPlaceholder=`img-meta-media-1500`]]
+                        [[pthumb? &input=`[[*[[elrGetImageMain]]]]` &options=`w=2500&f=webp` &toPlaceholder=`img-meta-media-2500`]]
                         [[+elrTemplateName
                             :is=`blog`
                             :or:is=`valuecard`
