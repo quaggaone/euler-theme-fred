@@ -32,4 +32,12 @@ properties: 'a:0:{}'
 <link rel="stylesheet" href="[[++fred.theme.euler.theme_dir]]css/main.css?v=2.0.0-alpha.13">
 <link rel="stylesheet" href="[[++fred.theme.euler.theme_dir]]css/fred.css">
 
+<!-- link alternate (rss feeds etc.) -->
+[[pdoResources?
+    &parents=`[[++fred.theme.euler.id_feeds]]`
+    &depth=`1`
+    &tplWrapper=`@INLINE [[+output]]`
+    &tpl=`elr_tpl_head_alternate_item`
+]]
+
 [[!+modx.user.id:is=`0`:then=`[[++fred.theme.euler.script_analytics]]`:else=``]]

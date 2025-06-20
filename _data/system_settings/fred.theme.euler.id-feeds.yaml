@@ -1,4 +1,4 @@
 key: fred.theme.euler.id_feeds
-value: '20'
+value: '21'
 xtype: numberfield
 namespace: fred_theme_euler

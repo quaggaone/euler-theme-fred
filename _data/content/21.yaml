@@ -1,0 +1,18 @@
+id: 21
+pagetitle: Feeds
+alias: feeds
+isfolder: 1
+introtext: null
+content: null
+template: 2
+menuindex: 9
+createdby: 1
+createdon: 1750423313
+uri: null
+properties: '{"contentblocks":{"_isContentBlocks":false}}'
+tvs:
+    elr_header_modifier: ''
+    elr_og_image: ''
+    elr_og_image_alt: ''
+    elr_subtitle: ''
+    elr_theme_color: ''

@@ -2,8 +2,8 @@ id: 19
 pagetitle: 'RSS Feed'
 alias: rss-feed
 published: 1
+parent: 21
 introtext: ''
-menuindex: 7
 createdby: 1
 createdon: 1750170170
 publishedon: 1750170618
