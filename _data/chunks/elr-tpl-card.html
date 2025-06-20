@@ -10,49 +10,49 @@ properties: 'a:0:{}'
 <div class="elr-card elr-card--link [[+tv.elr_theme_color]]">
     <a class="elr-card__container" href="[[~[[+id]]]]">
         <div class="elr-card__media">
-            [[pthumb? &input=`[[elrGetTemplatePorperty
+            [[pthumb? &input=`[[elrGetTemplateProperty
                     :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
                     :isempty=`[[+tv.elr_og_image]]`
                     ?
                     &id=`[[+id]]`
                     &property=`elrTemplateName`
                 ]]` &options=`w=100&f=webp` &toPlaceholder=`img-100`]]
-            [[pthumb? &input=`[[elrGetTemplatePorperty
+            [[pthumb? &input=`[[elrGetTemplateProperty
                     :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
                     :isempty=`[[+tv.elr_og_image]]`
                     ?
                     &id=`[[+id]]`
                     &property=`elrTemplateName`
                 ]]` &options=`w=300&f=webp` &toPlaceholder=`img-300`]]
-            [[pthumb? &input=`[[elrGetTemplatePorperty
+            [[pthumb? &input=`[[elrGetTemplateProperty
                     :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
                     :isempty=`[[+tv.elr_og_image]]`
                     ?
                     &id=`[[+id]]`
                     &property=`elrTemplateName`
                 ]]` &options=`w=500&f=webp` &toPlaceholder=`img-500`]]
-            [[pthumb? &input=`[[elrGetTemplatePorperty
+            [[pthumb? &input=`[[elrGetTemplateProperty
                     :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
                     :isempty=`[[+tv.elr_og_image]]`
                     ?
                     &id=`[[+id]]`
                     &property=`elrTemplateName`
                 ]]` &options=`w=750&f=webp` &toPlaceholder=`img-750`]]
-            [[pthumb? &input=`[[elrGetTemplatePorperty
+            [[pthumb? &input=`[[elrGetTemplateProperty
                     :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
                     :isempty=`[[+tv.elr_og_image]]`
                     ?
                     &id=`[[+id]]`
                     &property=`elrTemplateName`
                 ]]` &options=`w=1000&f=webp` &toPlaceholder=`img-1000`]]
-            [[pthumb? &input=`[[elrGetTemplatePorperty
+            [[pthumb? &input=`[[elrGetTemplateProperty
                     :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
                     :isempty=`[[+tv.elr_og_image]]`
                     ?
                     &id=`[[+id]]`
                     &property=`elrTemplateName`
                 ]]` &options=`w=1500&f=webp` &toPlaceholder=`img-1500`]]
-            [[pthumb? &input=`[[elrGetTemplatePorperty
+            [[pthumb? &input=`[[elrGetTemplateProperty
                     :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
                     :isempty=`[[+tv.elr_og_image]]`
                     ?
@@ -61,21 +61,21 @@ properties: 'a:0:{}'
                 ]]` &options=`w=2500&f=webp` &toPlaceholder=`img-2500`]]
             <img srcset="[[+img-100]] [[+img-100.width]]w, [[+img-300]] [[+img-300.width]]w, [[+img-500]] [[+img-500.width]]w, [[+img-750]] [[+img-750.width]]w, [[+img-1000]] [[+img-1000.width]]w, [[+img-1500]] [[+img-1500.width]]w, [[+img-2500]] [[+img-2500.width]]w"
                 sizes="(min-width: 1400px) 1320px, 100vw"
-                src="[[elrGetTemplatePorperty
+                src="[[elrGetTemplateProperty
                     :select=`teammember=[[+tv.elr_team_image]]&book=[[+tv.elr_meta_book_cover]]`
                     :isempty=`[[+tv.elr_og_image]]`
                     ?
                     &id=`[[+id]]`
                     &property=`elrTemplateName`
                 ]]"
-                alt="[[elrGetTemplatePorperty
+                alt="[[elrGetTemplateProperty
                     :select=`teammember=[[+pagetitle]]&book=[[+tv.pagetitle]]`
                     :isempty=`[[+tv.elr_og_image_alt]]`
                     ?
                     &id=`[[+id]]`
                     &property=`elrTemplateName`
                 ]]"
-                class="[[elrGetTemplatePorperty
+                class="[[elrGetTemplateProperty
                     :select=`teammember=elr--aspect-ratio-1-1&book=elr--object-fit-contain`
                     :isempty=``
                     ?
@@ -83,7 +83,7 @@ properties: 'a:0:{}'
                     &property=`elrTemplateName`
                 ]]"
             >
-            [[elrGetTemplatePorperty
+            [[elrGetTemplateProperty
                 :is=`partner`
                 :then=`[[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=100&f=webp` &toPlaceholder=`img-100`]]
                     [[pthumb? &input=`[[+tv.elr_meta_logo]]` &options=`w=300&f=webp` &toPlaceholder=`img-300`]]
@@ -101,10 +101,10 @@ properties: 'a:0:{}'
         </div>
         <div class="elr-card__body">
             <div class="elr-card__subtitle">
-                [[elrGetTemplatePorperty
+                [[elrGetTemplateProperty
                     :is=`teammember`
                     :then=`[[+tv.elr_team_title]]`
-                    :else=`[[++fred.theme.euler.name_[[elrGetTemplatePorperty?&id=`[[+id]]`&property=`elrTemplateName`]]]]`
+                    :else=`[[++fred.theme.euler.name_[[elrGetTemplateProperty?&id=`[[+id]]`&property=`elrTemplateName`]]]]`
                     ?
                     &id=`[[+id]]`
                     &property=`elrTemplateName`

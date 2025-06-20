@@ -1,6 +1,6 @@
 id: 23
 source: 1
-name: elrGetTemplatePorperty
+name: elrGetTemplateProperty
 category: 'euler Theme'
 properties: 'a:0:{}'
 
