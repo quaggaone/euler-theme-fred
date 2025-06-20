@@ -1,6 +1,6 @@
 {
   "name": "euler-theme-fred",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "MODX Fred Theme based on the euler web theme",
   "main": "index.js",
   "scripts": {

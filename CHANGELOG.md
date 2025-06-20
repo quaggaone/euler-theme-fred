@@ -1,4 +1,4 @@
-0.0.12-pl []
+0.0.12-pl [2025-06-21]
 ---
 - FIX display logo not `og_image` on partner pages
 - FIX sitemap generation behaviour (ignore `site_unavailable_page` value if `0`)
