@@ -1,3 +1,7 @@
+0.0.13-pl []
+---
+- FIX RSS Feed validation/encoding issues
+
 0.0.12-pl [2025-06-21]
 ---
 - FIX display logo not `og_image` on partner pages
