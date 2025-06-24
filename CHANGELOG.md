@@ -1,6 +1,7 @@
 0.0.13-pl []
 ---
 - FIX RSS Feed validation/encoding issues
+- FIX removed default BCC mail address from contact form
 
 0.0.12-pl [2025-06-21]
 ---
