@@ -1,4 +1,9 @@
-0.0.14 [2025-06-30]
+0.0.15-pl []
+---
+- FIX further contact form fixes
+- ADD icon formatting in `meta__info`
+
+0.0.14-pl [2025-06-30]
 ---
 - FIX contact form company field
 

@@ -10,7 +10,7 @@
   "author": "Felix Dimmerling",
   "license": "UNLICENSED",
   "dependencies": {
-    "euler-theme": "github:quaggaone/euler-theme#v2.0.0-alpha.14",
+    "euler-theme": "github:quaggaone/euler-theme#v2.0.0-alpha.16",
     "ncp": "^2.0.0"
   }
 }
