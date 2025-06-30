@@ -1,3 +1,7 @@
+0.0.14 []
+---
+- FIX contact form company field
+
 0.0.13-pl [2025-06-30]
 ---
 - FIX RSS Feed validation/encoding issues

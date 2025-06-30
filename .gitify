@@ -129,4 +129,5 @@ packages:
             - fredrtetinymce-1.2.5-pl
             - pdotools-3.0.2-pl
             - pthumb-2.3.3-pl
+            - recaptchav2-3.2.2-pl
             - resizer-1.0.2-beta
