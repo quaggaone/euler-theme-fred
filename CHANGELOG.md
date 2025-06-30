@@ -1,4 +1,4 @@
-1.0.0-pl []
+1.0.0-pl [2025-06-30]
 ---
 - ADD custom head system setting (eg. for google site verification)
 
