@@ -1,3 +1,7 @@
+1.0.0-pl []
+---
+- ADD custom head system setting (eg. for google site verification)
+
 0.0.15-pl [2025-06-30]
 ---
 - FIX further contact form fixes
