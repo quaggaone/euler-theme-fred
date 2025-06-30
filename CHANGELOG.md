@@ -1,4 +1,4 @@
-0.0.15-pl []
+0.0.15-pl [2025-06-30]
 ---
 - FIX further contact form fixes
 - ADD icon formatting in `meta__info`
