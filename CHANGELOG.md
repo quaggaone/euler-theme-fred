@@ -2,6 +2,7 @@
 ---
 - FIX further contact form fixes
 - ADD icon formatting in `meta__info`
+- FIX (hopefully) last issues with the contact form
 
 0.0.14-pl [2025-06-30]
 ---

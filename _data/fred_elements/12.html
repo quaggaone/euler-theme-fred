@@ -11,11 +11,11 @@ options_override: '{"remote":true,"settings":[{"name":"emailBCC","label":"eMail 
 
 [[!FormIt?
     &hooks=`recaptchav2,spam,email,FormItSaveForm`
-    &emailTpl=`formit_email`
+    &emailTpl=`elr_tpl_form_email`
     &emailHtml=`1`
     &emailTo=`[[+email]]`
     &emailToName=`[[+first-name]] [[+last-name]]`
-    &emailFrom=`[[++mail_smtp_user]]`
+    &emailFrom=`[[++emailsender]]`
     &emailFromName=`[[++site_name]]`
     &emailBCC=`{{ emailBCC }}`
     &emailReplyTo=`{{ emailReplyTo }}`
@@ -73,7 +73,7 @@ options_override: '{"remote":true,"settings":[{"name":"emailBCC","label":"eMail 
 	<small class="form-text">Bedingungen:</small>
 	<div class="form-check">
 		<input class="form-check-input terms" type="checkbox" id="terms-storage-acknowledged" name="terms-storage-acknowledged" value="true">
-		<label class="form-check-label terms" for="terms-storage-acknowledged">Ich bin mit der Speicherung aller für das Absenden des Formulars erforderlichen Daten einverstanden.* <span class="invalid-feedback d-block">[[!+fi.error.terms-storage]]</span></label>
+		<label class="form-check-label terms" for="terms-storage-acknowledged">Ich bin mit der Speicherung aller für das Absenden des Formulars erforderlichen Daten einverstanden.* <span class="invalid-feedback d-block">[[!+fi.error.terms-storage-acknowledged]]</span></label>
 	</div>
 	<div class="form-group">
 		<small class="form-text">* Dieses Feld muss ausgefüllt werden.</small>

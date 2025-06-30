@@ -1,0 +1,59 @@
+id: 33
+source: 1
+name: elr_tpl_form_email
+description: ''
+category: 'euler Theme'
+properties: 'a:0:{}'
+
+-----
+
+<html>
+<head>
+    <meta charset="[[++mail_charset]]">
+</head>
+<body>
+    
+<div style="display: none !important; height:0px; overflow:hidden; color:#ffffff; font-size:2pt;">
+    [[+message]]
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+<main id="content">
+    <small class="subtitle">
+        [[!+now:default=`now`:strtotime:date=`%d. %b %Y %T %Z`]]
+        <br>
+        [[+first-name]] [[+last-name]]
+        <br>
+        <a href="mailto:[[+email]]">[[+email]]</a> - [[+company]]
+    </small>
+    <h2>[[+subject]]</h2>
+    <hr>
+    <p>
+        [[+message]]
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</main>
+
+<footer id="footer">
+    <div id="legal">
+        <hr>
+        <p class="site-name">[[++site_name]] [[!+now:default=`now`:strtotime:date=`%Y`]]</p>
+        [[pdoMenu?
+            &parents=`[[++fred.theme.euler.id_info]]`
+            &level=`1`
+            &checkPermissions=`list`
+            &scheme=`https`
+        ]]
+    </div>
+</footer>
+    
+</body>
+</html>
