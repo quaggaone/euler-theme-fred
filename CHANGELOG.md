@@ -1,3 +1,7 @@
+1.0.1-pl []
+---
+- FIX canonical URLs in head (correct domain)
+
 1.0.0-pl [2025-06-30]
 ---
 - ADD custom head system setting (eg. for google site verification)
