@@ -1,7 +1,8 @@
-0.0.13-pl []
+0.0.13-pl [2025-06-30]
 ---
 - FIX RSS Feed validation/encoding issues
 - FIX removed default BCC mail address from contact form
+- ADD ReCaptcha dependency for FormIt forms
 
 0.0.12-pl [2025-06-21]
 ---
